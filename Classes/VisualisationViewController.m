@@ -27,7 +27,7 @@ enum {
 
 // CLASS IMPLEMENTATIONS
 @implementation VisualizationViewController
-@synthesize player, trackInfo, cocosView, timer;
+@synthesize player, trackInfo, cocosView, timer, mp3Filename;
 
 
 - (void) dealloc {
@@ -62,8 +62,9 @@ enum {
 		
 		[[Director sharedDirector] runWithScene:scene];
         
-        NSURL *fileURL = [[NSURL alloc] initFileURLWithPath: [[NSBundle mainBundle] pathForResource:@"narrier" ofType:@"mp3"]];
+        NSURL *fileURL = [[NSURL alloc] initFileURLWithPath: self.mp3Filename];
         self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+        NSLog(@"Starting to play %@", fileURL);
         if(!([self.player prepareToPlay])){
             NSLog(@"audioPlayer:prepareToPlay returned FALSE");
         }

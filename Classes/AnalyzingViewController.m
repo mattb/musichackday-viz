@@ -8,6 +8,7 @@
 
 #import "AnalyzingViewController.h"
 #import "TrackSegmentInfo.h"
+#import "RootViewController.h"
 #import "GTMHTTPFetcher.h"
 
 @implementation AnalyzingViewController
@@ -100,8 +101,10 @@
         status.text = @"Track segments analysed.";
         self._segments = [not object];
         _segment_idx = 0;
+
+        NSDictionary *info = [NSDictionary dictionaryWithObjectsAndKeys:self.filename, @"filename", [[TrackSegmentInfo alloc] initWithArray:self._segments], @"segments", nil];
 		[[NSNotificationCenter defaultCenter]
-				postNotificationName:@"startVisualization" object:[[TrackSegmentInfo alloc] initWithArray:self._segments]];
+				postNotificationName:@"startVisualization" object:info];
     }
 }
 

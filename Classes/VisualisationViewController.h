@@ -16,11 +16,13 @@
 	TrackSegmentInfo *trackInfo;
 	NSTimer *timer;
 	CocosView *cocosView;
+    NSString *mp3Filename;
 }
 
 @property (nonatomic, retain) AVAudioPlayer *player;
 @property (nonatomic, retain) TrackSegmentInfo *trackInfo;
 @property (nonatomic, retain) CocosView *cocosView;
 @property (nonatomic, retain) NSTimer *timer;
+@property (nonatomic, retain) NSString *mp3Filename;
 
 @end
