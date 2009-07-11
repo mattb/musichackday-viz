@@ -1,7 +1,7 @@
 Tmusichackday
 v7
 r0
-t269013190.571835
+t269017108.168781
 cCheck dependencies
 cProcessInfoPlistFile /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/Info.plist musichackday-Info.plist
 cCompileXIB /Developer/source/musichackday-viz/MainWindow.xib
@@ -10,6 +10,8 @@ cCpResource build/Debug-iphonesimulator/musichackday.app/cocos2d-Icon.png cocos2
 cCpResource build/Debug-iphonesimulator/musichackday.app/fps_images.png fps_images.png
 cCpResource build/Debug-iphonesimulator/musichackday.app/grossini.png grossini.png
 cCpResource build/Debug-iphonesimulator/musichackday.app/Icon.png Icon.png
+cCompileXIB /Developer/source/musichackday-viz/attachDemo.xib
+cCompileXIB /Developer/source/musichackday-viz/AnalyzingViewController.xib
 cProcessPCH /var/folders/Xh/XhPDVW7CEz8UBjVVUa3uFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/musichackday_Prefix-ggktghkreffxdahhcidmmgmyxivb/musichackday_Prefix.pch.gch musichackday_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 cProcessPCH /var/folders/Xh/XhPDVW7CEz8UBjVVUa3uFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/musichackday_Prefix-caxqmjwpakrbwieluhnhkycjaozn/musichackday_Prefix.pch.gch musichackday_Prefix.pch normal i386 c com.apple.compilers.gcc.4_2
 cCompileC build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/main.o /Developer/source/musichackday-viz/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -63,6 +65,7 @@ cCompileC build/musichackday.build/Debug-iphonesimulator/musichackday.build/Obje
 cCompileC build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/TouchDispatcher.o /Developer/source/musichackday-viz/cocos2d/TouchDispatcher.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/TouchHandler.o /Developer/source/musichackday-viz/cocos2d/TouchHandler.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/Transition.o /Developer/source/musichackday-viz/cocos2d/Transition.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/AnalyzingViewController.o /Developer/source/musichackday-viz/Classes/AnalyzingViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cLd /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/musichackday normal i386
 cGenerateDSYMFile /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app.dSYM /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/musichackday
 cTouch /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app
@@ -349,15 +352,32 @@ i<Availability.h>
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
+N/Developer/source/musichackday-viz/AnalyzingViewController.xib
+c000000004A58A8900000000000004410
+t1247324304
+s17424
+
+N/Developer/source/musichackday-viz/Classes/AnalyzingViewController.h
+c000000004A58A56200000000000000F7
+t1247323490
+s247
+i<UIKit/UIKit.h>
+
+N/Developer/source/musichackday-viz/Classes/AnalyzingViewController.m
+c000000004A58A7290000000000000229
+t1247323945
+s553
+i"AnalyzingViewController.h"
+
 N/Developer/source/musichackday-viz/Classes/RootViewController.h
-c000000004A58963C00000000000000D9
-t1247319612
-s217
+c000000004A58A7A300000000000001D6
+t1247324067
+s470
 
 N/Developer/source/musichackday-viz/Classes/RootViewController.m
-c000000004A58963C0000000000001006
-t1247319612
-s4102
+c000000004A58A85D0000000000000AE7
+t1247324253
+s2791
 i"RootViewController.h"
 
 N/Developer/source/musichackday-viz/Classes/musichackdayAppDelegate.h
@@ -383,17 +403,26 @@ t1247319612
 s11324
 
 N/Developer/source/musichackday-viz/RootViewController.xib
-c000000004A58963C0000000000001F5E
-t1247319612
-s8030
+c000000004A58A2E400000000000059F0
+t1247322852
+s23024
+
+N/Developer/source/musichackday-viz/attachDemo.xib
+c000000004A5872360000000000007113
+t1247310390
+s28947
 
 N/Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app
-t1247320389
-s374
+t1247324308
+s442
 
 N/Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app.dSYM
-t1247320389
+t1247324254
 s102
+
+N/Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/AnalyzingViewController.nib
+t1247324308
+s1655
 
 N/Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/CHANGELOG
 t1247320289
@@ -440,12 +469,16 @@ t1247320289
 s1525
 
 N/Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/RootViewController.nib
-t1247320372
-s1432
+t1247322855
+s1980
 
 N/Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/Version_script.in
 t1247320289
 s852
+
+N/Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/attachDemo.nib
+t1247321754
+s4031
 
 N/Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/autogen.sh
 t1247320289
@@ -476,12 +509,16 @@ t1247320372
 s1521
 
 N/Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/musichackday
-t1247320389
-s569424
+t1247324253
+s575068
 
 N/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/Action.o
 t1247320373
 s25416
+
+N/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/AnalyzingViewController.o
+t1247324044
+s29776
 
 N/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/AtlasNode.o
 t1247320373
@@ -668,8 +705,8 @@ t1247320375
 s23220
 
 N/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/RootViewController.o
-t1247320373
-s32100
+t1247324253
+s40180
 
 N/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/Scene.o
 t1247320375
@@ -1012,12 +1049,12 @@ t1247320325
 s28252
 
 N/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/musichackday.LinkFileList
-c000000004A5899330000000000001AD3
-t1247320371
-s6867
+c000000004A58A5660000000000001B66
+t1247323494
+s7014
 
 N/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/musichackdayAppDelegate.o
-t1247320373
+t1247324067
 s39604
 
 N/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/registry.o
@@ -3441,7 +3478,7 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies269013190#269013190#0(0"0(0#1#0"4301066776#0"0#
+lSLF07#2@18"Check dependencies269017107#269017107#0(0"0(0#1#0"4301066776#0"0#
 
 CCompileC build/MusicHackDay.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/RootViewController.o /Developer/source/MusicHackDay/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s269012931.333584
@@ -3494,6 +3531,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@59"Compile /Developer/source/musichackday-viz/cocos2d/Action.m269013173#269013173#0(0"0(0#0#51"/Developer/source/musichackday-viz/cocos2d/Action.m4301066776#1925"    cd /Developer/source/musichackday-viz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-generated-files.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-own-target-headers.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-all-target-headers.hmap -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-project-headers.hmap -F/Developer/source/musichackday-viz/build/Debug-iphonesimulator -I/Developer/source/musichackday-viz/build/Debug-iphonesimulator/include -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources/i386 -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources -include /var/folders/Xh/XhPDVW7CEz8UBjVVUa3uFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/musichackday_Prefix-ggktghkreffxdahhcidmmgmyxivb/musichackday_Prefix.pch -c /Developer/source/musichackday-viz/cocos2d/Action.m -o /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/Action.o0#
+
+CCompileC build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/AnalyzingViewController.o /Developer/source/musichackday-viz/Classes/AnalyzingViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s269016844.654364
+e269016844.803102
+r1
+xCompileC
+xbuild/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/AnalyzingViewController.o
+x/Developer/source/musichackday-viz/Classes/AnalyzingViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Developer/source/musichackday-viz/Classes/AnalyzingViewController.m269016844#269016844#0(0"0(0#0#68"/Developer/source/musichackday-viz/Classes/AnalyzingViewController.m4301066776#1959"    cd /Developer/source/musichackday-viz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-generated-files.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-own-target-headers.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-all-target-headers.hmap -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-project-headers.hmap -F/Developer/source/musichackday-viz/build/Debug-iphonesimulator -I/Developer/source/musichackday-viz/build/Debug-iphonesimulator/include -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources/i386 -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources -include /var/folders/Xh/XhPDVW7CEz8UBjVVUa3uFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/musichackday_Prefix-ggktghkreffxdahhcidmmgmyxivb/musichackday_Prefix.pch -c /Developer/source/musichackday-viz/Classes/AnalyzingViewController.m -o /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/AnalyzingViewController.o0#
 
 CCompileC build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/AtlasNode.o /Developer/source/musichackday-viz/cocos2d/AtlasNode.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s269013173.234134
@@ -4094,8 +4144,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@71"Compile /Developer/source/musichackday-viz/cocos2d/QuadParticleSystem.m269013175#269013175#0(0"0(0#0#63"/Developer/source/musichackday-viz/cocos2d/QuadParticleSystem.m4301066776#1949"    cd /Developer/source/musichackday-viz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-generated-files.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-own-target-headers.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-all-target-headers.hmap -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-project-headers.hmap -F/Developer/source/musichackday-viz/build/Debug-iphonesimulator -I/Developer/source/musichackday-viz/build/Debug-iphonesimulator/include -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources/i386 -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources -include /var/folders/Xh/XhPDVW7CEz8UBjVVUa3uFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/musichackday_Prefix-ggktghkreffxdahhcidmmgmyxivb/musichackday_Prefix.pch -c /Developer/source/musichackday-viz/cocos2d/QuadParticleSystem.m -o /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/QuadParticleSystem.o0#
 
 CCompileC build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/RootViewController.o /Developer/source/musichackday-viz/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s269013173.155844
-e269013173.234028
+s269017053.729460
+e269017053.881231
 r1
 xCompileC
 xbuild/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/RootViewController.o
@@ -4104,7 +4154,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@71"Compile /Developer/source/musichackday-viz/Classes/RootViewController.m269013173#269013173#0(0"0(0#0#63"/Developer/source/musichackday-viz/Classes/RootViewController.m4301066776#1949"    cd /Developer/source/musichackday-viz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-generated-files.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-own-target-headers.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-all-target-headers.hmap -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-project-headers.hmap -F/Developer/source/musichackday-viz/build/Debug-iphonesimulator -I/Developer/source/musichackday-viz/build/Debug-iphonesimulator/include -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources/i386 -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources -include /var/folders/Xh/XhPDVW7CEz8UBjVVUa3uFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/musichackday_Prefix-ggktghkreffxdahhcidmmgmyxivb/musichackday_Prefix.pch -c /Developer/source/musichackday-viz/Classes/RootViewController.m -o /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/RootViewController.o0#
+lSLF07#2@71"Compile /Developer/source/musichackday-viz/Classes/RootViewController.m269017053#269017053#0(0"0(0#0#63"/Developer/source/musichackday-viz/Classes/RootViewController.m4301066776#1949"    cd /Developer/source/musichackday-viz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-generated-files.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-own-target-headers.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-all-target-headers.hmap -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-project-headers.hmap -F/Developer/source/musichackday-viz/build/Debug-iphonesimulator -I/Developer/source/musichackday-viz/build/Debug-iphonesimulator/include -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources/i386 -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources -include /var/folders/Xh/XhPDVW7CEz8UBjVVUa3uFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/musichackday_Prefix-ggktghkreffxdahhcidmmgmyxivb/musichackday_Prefix.pch -c /Developer/source/musichackday-viz/Classes/RootViewController.m -o /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/RootViewController.o0#
 
 CCompileC build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/Scene.o /Developer/source/musichackday-viz/cocos2d/Scene.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s269013175.440846
@@ -5230,8 +5280,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@65"Compile /Developer/source/musichackday-viz/external/Tremor/mdct.c269013124#269013125#0(0"0(0#0#57"/Developer/source/musichackday-viz/external/Tremor/mdct.c4301066776#1919"    cd /Developer/source/musichackday-viz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-generated-files.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-own-target-headers.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-all-target-headers.hmap -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-project-headers.hmap -F/Developer/source/musichackday-viz/build/Debug-iphonesimulator -I/Developer/source/musichackday-viz/build/Debug-iphonesimulator/include -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources/i386 -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources -include /var/folders/Xh/XhPDVW7CEz8UBjVVUa3uFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/musichackday_Prefix-caxqmjwpakrbwieluhnhkycjaozn/musichackday_Prefix.pch -c /Developer/source/musichackday-viz/external/Tremor/mdct.c -o /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/mdct.o0#
 
 CCompileC build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/musichackdayAppDelegate.o /Developer/source/musichackday-viz/Classes/musichackdayAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s269013173.094959
-e269013173.180669
+s269016867.693243
+e269016867.829161
 r1
 xCompileC
 xbuild/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/musichackdayAppDelegate.o
@@ -5240,7 +5290,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Developer/source/musichackday-viz/Classes/musichackdayAppDelegate.m269013173#269013173#0(0"0(0#0#68"/Developer/source/musichackday-viz/Classes/musichackdayAppDelegate.m4301066776#1959"    cd /Developer/source/musichackday-viz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-generated-files.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-own-target-headers.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-all-target-headers.hmap -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-project-headers.hmap -F/Developer/source/musichackday-viz/build/Debug-iphonesimulator -I/Developer/source/musichackday-viz/build/Debug-iphonesimulator/include -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources/i386 -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources -include /var/folders/Xh/XhPDVW7CEz8UBjVVUa3uFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/musichackday_Prefix-ggktghkreffxdahhcidmmgmyxivb/musichackday_Prefix.pch -c /Developer/source/musichackday-viz/Classes/musichackdayAppDelegate.m -o /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/musichackdayAppDelegate.o0#
+lSLF07#2@76"Compile /Developer/source/musichackday-viz/Classes/musichackdayAppDelegate.m269016867#269016867#0(0"0(0#0#68"/Developer/source/musichackday-viz/Classes/musichackdayAppDelegate.m4301066776#1959"    cd /Developer/source/musichackday-viz    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-generated-files.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-own-target-headers.hmap -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-all-target-headers.hmap -iquote /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/musichackday-project-headers.hmap -F/Developer/source/musichackday-viz/build/Debug-iphonesimulator -I/Developer/source/musichackday-viz/build/Debug-iphonesimulator/include -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources/i386 -I/Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/DerivedSources -include /var/folders/Xh/XhPDVW7CEz8UBjVVUa3uFU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/musichackday_Prefix-ggktghkreffxdahhcidmmgmyxivb/musichackday_Prefix.pch -c /Developer/source/musichackday-viz/Classes/musichackdayAppDelegate.m -o /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/musichackdayAppDelegate.o0#
 
 CCompileC build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/registry.o /Developer/source/musichackday-viz/external/Tremor/registry.c normal i386 c com.apple.compilers.gcc.4_2
 s269013124.965517
@@ -5336,6 +5386,14 @@ xCompileXIB
 x/Developer/source/MusicHackDay/RootViewController.xib
 lSLF07#2@33"CompileXIB RootViewController.xib269012929#269012930#0(0"0(0#0#53"/Developer/source/MusicHackDay/RootViewController.xib4301066776#428"    cd /Developer/source/MusicHackDay    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Developer/source/MusicHackDay/build/Debug-iphonesimulator/musichackday.app/RootViewController.nib /Developer/source/MusicHackDay/RootViewController.xib0#
 
+CCompileXIB /Developer/source/musichackday-viz/AnalyzingViewController.xib
+s269017107.838862
+e269017108.159835
+r1
+xCompileXIB
+x/Developer/source/musichackday-viz/AnalyzingViewController.xib
+lSLF07#2@38"CompileXIB AnalyzingViewController.xib269017107#269017108#0(0"0(0#0#62"/Developer/source/musichackday-viz/AnalyzingViewController.xib4301066776#450"    cd /Developer/source/musichackday-viz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/AnalyzingViewController.nib /Developer/source/musichackday-viz/AnalyzingViewController.xib0#
+
 CCompileXIB /Developer/source/musichackday-viz/MainWindow.xib
 s269013171.907484
 e269013172.218319
@@ -5345,12 +5403,20 @@ x/Developer/source/musichackday-viz/MainWindow.xib
 lSLF07#2@25"CompileXIB MainWindow.xib269013171#269013172#0(0"0(0#0#49"/Developer/source/musichackday-viz/MainWindow.xib4301066776#424"    cd /Developer/source/musichackday-viz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/MainWindow.nib /Developer/source/musichackday-viz/MainWindow.xib0#
 
 CCompileXIB /Developer/source/musichackday-viz/RootViewController.xib
-s269013171.908479
-e269013172.218513
+s269015655.391003
+e269015655.720076
 r1
 xCompileXIB
 x/Developer/source/musichackday-viz/RootViewController.xib
-lSLF07#2@33"CompileXIB RootViewController.xib269013171#269013172#0(0"0(0#0#57"/Developer/source/musichackday-viz/RootViewController.xib4301066776#440"    cd /Developer/source/musichackday-viz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/RootViewController.nib /Developer/source/musichackday-viz/RootViewController.xib0#
+lSLF07#2@33"CompileXIB RootViewController.xib269015655#269015655#0(0"0(0#0#57"/Developer/source/musichackday-viz/RootViewController.xib4301066776#440"    cd /Developer/source/musichackday-viz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/RootViewController.nib /Developer/source/musichackday-viz/RootViewController.xib0#
+
+CCompileXIB /Developer/source/musichackday-viz/attachDemo.xib
+s269014554.039472
+e269014554.579738
+r1
+xCompileXIB
+x/Developer/source/musichackday-viz/attachDemo.xib
+lSLF07#2@25"CompileXIB attachDemo.xib269014554#269014554#0(0"0(0#0#49"/Developer/source/musichackday-viz/attachDemo.xib4301066776#424"    cd /Developer/source/musichackday-viz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/attachDemo.nib /Developer/source/musichackday-viz/attachDemo.xib0#
 
 CCpResource build/Debug-iphonesimulator/musichackday.app/CHANGELOG external/Tremor/CHANGELOG
 s269013089.853485
@@ -5524,13 +5590,13 @@ x/Developer/source/MusicHackDay/build/Debug-iphonesimulator/musichackday.app/mus
 lSLF07#2@124"GenerateDSYMFile build/Debug-iphonesimulator/musichackday.app.dSYM build/Debug-iphonesimulator/musichackday.app/musichackday269012932#269012932#0(0"0(0#0#88"/Developer/source/MusicHackDay/build/Debug-iphonesimulator/musichackday.app/musichackday4301066776#374"    cd /Developer/source/MusicHackDay    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Developer/source/MusicHackDay/build/Debug-iphonesimulator/musichackday.app/musichackday -o /Developer/source/MusicHackDay/build/Debug-iphonesimulator/musichackday.app.dSYM0#
 
 CGenerateDSYMFile /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app.dSYM /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/musichackday
-s269013189.220660
-e269013189.302716
+s269017053.974359
+e269017054.044177
 r1
 xGenerateDSYMFile
 x/Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app.dSYM
 x/Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/musichackday
-lSLF07#2@124"GenerateDSYMFile build/Debug-iphonesimulator/musichackday.app.dSYM build/Debug-iphonesimulator/musichackday.app/musichackday269013189#269013189#0(0"0(0#0#92"/Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/musichackday4301066776#386"    cd /Developer/source/musichackday-viz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/musichackday -o /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app.dSYM0#
+lSLF07#2@124"GenerateDSYMFile build/Debug-iphonesimulator/musichackday.app.dSYM build/Debug-iphonesimulator/musichackday.app/musichackday269017053#269017054#0(0"0(0#0#92"/Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/musichackday4301066776#386"    cd /Developer/source/musichackday-viz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/musichackday -o /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app.dSYM0#
 
 CLd /Developer/source/MusicHackDay/build/Debug-iphonesimulator/musichackday.app/musichackday normal i386
 s269012931.408144
@@ -5543,14 +5609,14 @@ xi386
 lSLF07#2@93"Link /Developer/source/MusicHackDay/build/Debug-iphonesimulator/musichackday.app/musichackday269012931#269012932#0(0"0(0#0#0"4301066776#847"    cd /Developer/source/MusicHackDay    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -L/Developer/source/MusicHackDay/build/Debug-iphonesimulator -F/Developer/source/MusicHackDay/build/Debug-iphonesimulator -filelist /Developer/source/MusicHackDay/build/MusicHackDay.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/musichackday.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o /Developer/source/MusicHackDay/build/Debug-iphonesimulator/musichackday.app/musichackday0#
 
 CLd /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/musichackday normal i386
-s269013189.126936
-e269013189.220539
+s269017053.881343
+e269017053.974249
 r1
 xLd
 x/Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/musichackday
 xnormal
 xi386
-lSLF07#2@97"Link /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/musichackday269013189#269013189#0(0"0(0#0#0"4301066776#975"    cd /Developer/source/musichackday-viz    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -L/Developer/source/musichackday-viz/build/Debug-iphonesimulator -F/Developer/source/musichackday-viz/build/Debug-iphonesimulator -filelist /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/musichackday.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -framework AVFoundation -framework AudioToolbox -framework OpenAL -framework OpenGLES -framework QuartzCore -o /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/musichackday0#
+lSLF07#2@97"Link /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/musichackday269017053#269017053#0(0"0(0#0#0"4301066776#975"    cd /Developer/source/musichackday-viz    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -L/Developer/source/musichackday-viz/build/Debug-iphonesimulator -F/Developer/source/musichackday-viz/build/Debug-iphonesimulator -filelist /Developer/source/musichackday-viz/build/musichackday.build/Debug-iphonesimulator/musichackday.build/Objects-normal/i386/musichackday.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -framework AVFoundation -framework AudioToolbox -framework OpenAL -framework OpenGLES -framework QuartzCore -o /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app/musichackday0#
 
 CProcessInfoPlistFile /Developer/source/MusicHackDay/build/Debug-iphonesimulator/musichackday.app/Info.plist musichackday-Info.plist
 s269012929.833503
@@ -5644,10 +5710,10 @@ x/Developer/source/MusicHackDay/build/Debug-iphonesimulator/musichackday.app
 lSLF07#2@81"Touch /Developer/source/MusicHackDay/build/Debug-iphonesimulator/musichackday.app269012932#269012932#0(0"0(0#0#0"4301066776#267"    cd /Developer/source/MusicHackDay    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Developer/source/MusicHackDay/build/Debug-iphonesimulator/musichackday.app0#
 
 CTouch /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app
-s269013189.302811
-e269013189.305740
+s269017108.165530
+e269017108.168731
 r1
 xTouch
 x/Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app
-lSLF07#2@85"Touch /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app269013189#269013189#0(0"0(0#0#0"4301066776#275"    cd /Developer/source/musichackday-viz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app0#
+lSLF07#2@85"Touch /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app269017108#269017108#0(0"0(0#0#0"4301066776#275"    cd /Developer/source/musichackday-viz    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Developer/source/musichackday-viz/build/Debug-iphonesimulator/musichackday.app0#
 

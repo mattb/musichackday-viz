@@ -72,6 +72,9 @@
 		E1B379401008D07B00A88D3B /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B3793F1008D07B00A88D3B /* OpenAL.framework */; };
 		E1B379421008D07B00A88D3B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B379411008D07B00A88D3B /* OpenGLES.framework */; };
 		E1B379441008D07B00A88D3B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B379431008D07B00A88D3B /* QuartzCore.framework */; };
+		E1B379AF1008D24600A88D3B /* cocosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B379AE1008D24600A88D3B /* cocosView.xib */; };
+		E1B37A711008DC9000A88D3B /* AnalyzingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B37A701008DC9000A88D3B /* AnalyzingViewController.m */; };
+		E1B37A761008DE6A00A88D3B /* AnalyzingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B37A751008DE6A00A88D3B /* AnalyzingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -199,6 +202,10 @@
 		E1B3793F1008D07B00A88D3B /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		E1B379411008D07B00A88D3B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		E1B379431008D07B00A88D3B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E1B379AE1008D24600A88D3B /* cocosView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = cocosView.xib; path = "source/musichackday-viz/attachDemo.xib"; sourceTree = DEVELOPER_DIR; };
+		E1B37A6F1008DC9000A88D3B /* AnalyzingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnalyzingViewController.h; path = "source/musichackday-viz/Classes/AnalyzingViewController.h"; sourceTree = DEVELOPER_DIR; };
+		E1B37A701008DC9000A88D3B /* AnalyzingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnalyzingViewController.m; path = "source/musichackday-viz/Classes/AnalyzingViewController.m"; sourceTree = DEVELOPER_DIR; };
+		E1B37A751008DE6A00A88D3B /* AnalyzingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AnalyzingViewController.xib; path = "source/musichackday-viz/AnalyzingViewController.xib"; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +234,8 @@
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* musichackdayAppDelegate.h */,
 				1D3623250D0F684500981E51 /* musichackdayAppDelegate.m */,
+				E1B37A6F1008DC9000A88D3B /* AnalyzingViewController.h */,
+				E1B37A701008DC9000A88D3B /* AnalyzingViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -269,6 +278,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E1B379AE1008D24600A88D3B /* cocosView.xib */,
 				E1B3792E1008D05F00A88D3B /* cocos2d-Icon.png */,
 				E1B3792F1008D05F00A88D3B /* fps_images.png */,
 				E1B379301008D05F00A88D3B /* grossini.png */,
@@ -276,6 +286,7 @@
 				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* musichackday-Info.plist */,
+				E1B37A751008DE6A00A88D3B /* AnalyzingViewController.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -464,6 +475,8 @@
 				E1B379331008D05F00A88D3B /* fps_images.png in Resources */,
 				E1B379341008D05F00A88D3B /* grossini.png in Resources */,
 				E1B379351008D05F00A88D3B /* Icon.png in Resources */,
+				E1B379AF1008D24600A88D3B /* cocosView.xib in Resources */,
+				E1B37A761008DE6A00A88D3B /* AnalyzingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +538,7 @@
 				E1B378C51008D05100A88D3B /* TouchDispatcher.m in Sources */,
 				E1B378C61008D05100A88D3B /* TouchHandler.m in Sources */,
 				E1B378C71008D05100A88D3B /* Transition.m in Sources */,
+				E1B37A711008DC9000A88D3B /* AnalyzingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

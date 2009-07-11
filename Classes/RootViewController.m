@@ -10,57 +10,40 @@
 
 
 @implementation RootViewController
+@synthesize trackList, analyzingViewController;
+static NSArray *trackNames = nil;
 
-/*
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)dealloc{
+	[trackList release];
+	[analyzingViewController release];
+	[super dealloc];
+}
 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-*/
 
-/*
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-*/
-/*
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-*/
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-	[super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-	[super viewDidDisappear:animated];
-}
-*/
-
-/*
- // Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	// Return YES for supported orientations.
-	return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
- */
-
-- (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
+- (void)viewDidLoad
+{
+	// Make the title of this page the same as the title of this app
+	self.title = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"];
 	
-	// Release any cached data, images, etc that aren't in use.
+	self.trackList = [NSMutableArray array];
+    if (!trackNames)
+	{
+		trackNames = [[NSArray alloc] initWithObjects:@"track one", @"track two", @"track three", nil];
+    }
+	
+    for (NSString *trackName in trackNames)
+	{
+		[self.trackList addObject:trackName];
+	}
+	[self.tableView reloadData];
+	
 }
 
-- (void)viewDidUnload {
-	// Release anything that can be recreated in viewDidLoad or on demand.
-	// e.g. self.myOutlet = nil;
+- (void)viewDidUnload
+{
+	self.tableView = nil;
+	self.trackList = nil;
 }
-
 
 #pragma mark Table view methods
 
@@ -68,86 +51,50 @@
     return 1;
 }
 
-
-// Customize the number of rows in the table view.
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	return trackList.count;
 }
 
 
-// Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	static NSString *kCellIdentifier = @"cellID";
+	
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
+	if (!cell)
+	{
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:kCellIdentifier] autorelease];
+        
+		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        
+        cell.textLabel.backgroundColor = [UIColor clearColor];
+		cell.textLabel.opaque = NO;
+		cell.textLabel.textColor = [UIColor blackColor];
+		cell.textLabel.highlightedTextColor = [UIColor whiteColor];
+		cell.textLabel.font = [UIFont boldSystemFontOfSize:18];
+		
+		cell.detailTextLabel.backgroundColor = [UIColor clearColor];
+		cell.detailTextLabel.opaque = NO;
+		cell.detailTextLabel.textColor = [UIColor grayColor];
+		cell.detailTextLabel.highlightedTextColor = [UIColor whiteColor];
+		cell.detailTextLabel.font = [UIFont systemFontOfSize:14];
     }
-    
-	// Configure the cell.
-
-    return cell;
+    cell.textLabel.text = [trackList objectAtIndex:indexPath.row];
+	return cell;
 }
 
-
-
-/*
-// Override to support row selection in the table view.
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
-    // Navigation logic may go here -- for example, create and push another view controller.
-	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
-	// [self.navigationController pushViewController:anotherViewController animated:YES];
-	// [anotherViewController release];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //NSMutableDictionary *rowData = [self.trackList objectAtIndex:indexPath.row];
+	//TODO - wire up the current playing track
+	if (!self.analyzingViewController)
+	{
+        self.analyzingViewController = [[AnalyzingViewController alloc] 
+								initWithNibName:@"AnalyzingViewController" bundle:nil];
+    }
+    [self.navigationController pushViewController:analyzingViewController animated:YES];
 }
-*/
-
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source.
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }   
-}
-*/
-
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-
-- (void)dealloc {
-    [super dealloc];
-}
-
 
 @end
 

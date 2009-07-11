@@ -1,10 +1,39 @@
 // !$*UTF8*$!
 {
+	1D3623240D0F684500981E51 /* musichackdayAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {969, 693}}";
+			sepNavSelRange = "{309, 0}";
+			sepNavVisRange = "{0, 459}";
+		};
+	};
+	1D3623250D0F684500981E51 /* musichackdayAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {969, 693}}";
+			sepNavSelRange = "{548, 0}";
+			sepNavVisRange = "{0, 844}";
+		};
+	};
 	1D6058900D05DD3D006BFB54 /* musichackday */ = {
 		activeExec = 0;
 		executables = (
 			E1BCF18F1008CDBC0096DA91 /* musichackday */,
 		);
+	};
+	28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {969, 693}}";
+			sepNavSelRange = "{153, 0}";
+			sepNavVisRange = "{0, 470}";
+		};
+	};
+	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {969, 1313}}";
+			sepNavSelRange = "{2510, 0}";
+			sepNavVisRange = "{945, 1845}";
+			sepNavWindowFrame = "{{38, 103}, {1309, 749}}";
+		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
@@ -13,17 +42,43 @@
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* musichackday */,
 		);
+		breakpoints = (
+		);
 		codeSenseManager = E1BCF1941008CDDB0096DA91 /* Code sense */;
 		executables = (
 			E1BCF18F1008CDBC0096DA91 /* musichackday */,
 		);
 		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					341,
+					791,
 					20,
 					48,
 					43,
@@ -62,48 +117,171 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 269012972;
-			PBXWorkspaceStateSaveDate = 269012972;
+			PBXPerProjectTemplateStateSaveDate = 269016102;
+			PBXWorkspaceStateSaveDate = 269016102;
 		};
 		perUserProjectItems = {
-			E1B379531008D08900A88D3B /* XCBuildMessageTextBookmark */ = E1B379531008D08900A88D3B /* XCBuildMessageTextBookmark */;
-			E1B379541008D08900A88D3B /* PBXTextBookmark */ = E1B379541008D08900A88D3B /* PBXTextBookmark */;
+			E1B379F81008D77C00A88D3B = E1B379F81008D77C00A88D3B /* PBXTextBookmark */;
+			E1B379FA1008D77C00A88D3B = E1B379FA1008D77C00A88D3B /* PBXTextBookmark */;
+			E1B37A2A1008DA1800A88D3B = E1B37A2A1008DA1800A88D3B /* PBXTextBookmark */;
+			E1B37A5B1008DB8F00A88D3B = E1B37A5B1008DB8F00A88D3B /* PBXTextBookmark */;
+			E1B37A651008DC1F00A88D3B = E1B37A651008DC1F00A88D3B /* PBXTextBookmark */;
+			E1B37A8B1008DFE700A88D3B /* PBXTextBookmark */ = E1B37A8B1008DFE700A88D3B /* PBXTextBookmark */;
+			E1B37A8C1008DFE700A88D3B /* PBXTextBookmark */ = E1B37A8C1008DFE700A88D3B /* PBXTextBookmark */;
+			E1B37A8D1008DFE700A88D3B /* PBXTextBookmark */ = E1B37A8D1008DFE700A88D3B /* PBXTextBookmark */;
+			E1B37A8E1008DFE700A88D3B /* PBXTextBookmark */ = E1B37A8E1008DFE700A88D3B /* PBXTextBookmark */;
+			E1B37A8F1008DFE700A88D3B /* PBXTextBookmark */ = E1B37A8F1008DFE700A88D3B /* PBXTextBookmark */;
+			E1B37A901008DFE700A88D3B /* PBXTextBookmark */ = E1B37A901008DFE700A88D3B /* PBXTextBookmark */;
+			E1B37A911008DFE700A88D3B /* PBXTextBookmark */ = E1B37A911008DFE700A88D3B /* PBXTextBookmark */;
+			E1B37AA01008DFF900A88D3B /* PBXTextBookmark */ = E1B37AA01008DFF900A88D3B /* PBXTextBookmark */;
 		};
 		sourceControlManager = E1BCF1931008CDDB0096DA91 /* Source Control */;
 		userBuildSettings = {
 		};
 	};
-	E1B378821008D05100A88D3B /* ivorbisfile_example.c */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.c;
-		name = ivorbisfile_example.c;
-		path = "/Developer/source/musichackday-viz/external/Tremor/ivorbisfile_example.c";
-		sourceTree = "<absolute>";
+	E1B379F81008D77C00A88D3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* musichackdayAppDelegate.h */;
+		name = "musichackdayAppDelegate.h: 14";
+		rLen = 0;
+		rLoc = 309;
+		rType = 0;
+		vrLen = 459;
+		vrLoc = 0;
+	};
+	E1B379FA1008D77C00A88D3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* musichackdayAppDelegate.m */;
+		name = "musichackdayAppDelegate.m: 26";
+		rLen = 0;
+		rLoc = 548;
+		rType = 0;
+		vrLen = 844;
+		vrLoc = 0;
+	};
+	E1B37A2A1008DA1800A88D3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 11";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 302;
+		vrLoc = 0;
+	};
+	E1B37A5B1008DB8F00A88D3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 58";
+		rLen = 11;
+		rLoc = 1263;
+		rType = 0;
+		vrLen = 1859;
+		vrLoc = 834;
+	};
+	E1B37A651008DC1F00A88D3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 81";
+		rLen = 0;
+		rLoc = 2242;
+		rType = 0;
+		vrLen = 1981;
+		vrLoc = 1000;
+	};
+	E1B37A6F1008DC9000A88D3B /* AnalyzingViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {537, 1053}}";
-			sepNavSelRange = "{1169, 0}";
-			sepNavVisRange = "{964, 390}";
+			sepNavIntBoundsRect = "{{0, 0}, {969, 693}}";
+			sepNavSelRange = "{247, 0}";
+			sepNavVisRange = "{0, 247}";
 		};
 	};
-	E1B379531008D08900A88D3B /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "Vorbis/ivorbiscodec.h: No such file or directory";
-		fRef = E1B378821008D05100A88D3B /* ivorbisfile_example.c */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 23;
-		rType = 1;
+	E1B37A701008DC9000A88D3B /* AnalyzingViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {969, 693}}";
+			sepNavSelRange = "{414, 0}";
+			sepNavVisRange = "{0, 553}";
+		};
 	};
-	E1B379541008D08900A88D3B /* PBXTextBookmark */ = {
+	E1B37A8B1008DFE700A88D3B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = E1B378821008D05100A88D3B /* ivorbisfile_example.c */;
-		name = "ivorbisfile_example.c: 24";
+		fRef = 1D3623250D0F684500981E51 /* musichackdayAppDelegate.m */;
+		name = "musichackdayAppDelegate.m: 26";
 		rLen = 0;
-		rLoc = 1169;
+		rLoc = 548;
 		rType = 0;
-		vrLen = 390;
-		vrLoc = 964;
+		vrLen = 844;
+		vrLoc = 0;
+	};
+	E1B37A8C1008DFE700A88D3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* musichackdayAppDelegate.h */;
+		name = "musichackdayAppDelegate.h: 14";
+		rLen = 0;
+		rLoc = 309;
+		rType = 0;
+		vrLen = 459;
+		vrLoc = 0;
+	};
+	E1B37A8D1008DFE700A88D3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E1B37A6F1008DC9000A88D3B /* AnalyzingViewController.h */;
+		name = "AnalyzingViewController.h: 16";
+		rLen = 0;
+		rLoc = 247;
+		rType = 0;
+		vrLen = 247;
+		vrLoc = 0;
+	};
+	E1B37A8E1008DFE700A88D3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E1B37A701008DC9000A88D3B /* AnalyzingViewController.m */;
+		name = "AnalyzingViewController.m: 17";
+		rLen = 0;
+		rLoc = 414;
+		rType = 0;
+		vrLen = 553;
+		vrLoc = 0;
+	};
+	E1B37A8F1008DFE700A88D3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 9";
+		rLen = 0;
+		rLoc = 153;
+		rType = 0;
+		vrLen = 470;
+		vrLoc = 0;
+	};
+	E1B37A901008DFE700A88D3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 90";
+		rLen = 0;
+		rLoc = 2510;
+		rType = 0;
+		vrLen = 1845;
+		vrLoc = 945;
+	};
+	E1B37A911008DFE700A88D3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 90";
+		rLen = 0;
+		rLoc = 2510;
+		rType = 0;
+		vrLen = 1845;
+		vrLoc = 945;
+	};
+	E1B37AA01008DFF900A88D3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 90";
+		rLen = 0;
+		rLoc = 2510;
+		rType = 0;
+		vrLen = 1845;
+		vrLoc = 945;
 	};
 	E1BCF18F1008CDBC0096DA91 /* musichackday */ = {
 		isa = PBXExecutable;
@@ -112,7 +290,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
+		breakpointsEnabled = 1;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -129,9 +307,13 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = musichackday;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	E1BCF1931008CDDB0096DA91 /* Source Control */ = {
 		isa = PBXSourceControlManager;
