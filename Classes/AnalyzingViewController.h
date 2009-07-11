@@ -8,9 +8,19 @@
 
 
 #import <UIKit/UIKit.h>
+#import "EchoNest.h"
 
 @interface AnalyzingViewController : UIViewController
 {
+    IBOutlet UILabel *status;
+    EchoNest *_echoNest;
+    ENTrack *_track;
+    NSArray *_segments;
+    int _segment_idx;
 }
+
+@property (nonatomic, retain) EchoNest *_echoNest;
+@property (nonatomic, retain) NSArray *_segments;
+@property (nonatomic, retain) ENTrack *_track;
 
 @end

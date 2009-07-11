@@ -18,6 +18,7 @@
 		D96355091008E3C3002A8976 /* EchoNest.m in Sources */ = {isa = PBXBuildFile; fileRef = D96355041008E3C3002A8976 /* EchoNest.m */; };
 		D963550A1008E3C3002A8976 /* ENArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = D96355061008E3C3002A8976 /* ENArtist.m */; };
 		D963550B1008E3C3002A8976 /* ENTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = D96355081008E3C3002A8976 /* ENTrack.m */; };
+		D963551A1008E7DF002A8976 /* narrier.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D96355191008E7DF002A8976 /* narrier.mp3 */; };
 		E1B378981008D05100A88D3B /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B377611008D05100A88D3B /* Action.m */; };
 		E1B378991008D05100A88D3B /* AtlasNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B377631008D05100A88D3B /* AtlasNode.m */; };
 		E1B3789A1008D05100A88D3B /* AtlasSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B377651008D05100A88D3B /* AtlasSprite.m */; };
@@ -101,6 +102,7 @@
 		D96355061008E3C3002A8976 /* ENArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENArtist.m; sourceTree = "<group>"; };
 		D96355071008E3C3002A8976 /* ENTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENTrack.h; sourceTree = "<group>"; };
 		D96355081008E3C3002A8976 /* ENTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENTrack.m; sourceTree = "<group>"; };
+		D96355191008E7DF002A8976 /* narrier.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = narrier.mp3; sourceTree = "<group>"; };
 		E1B377601008D05100A88D3B /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Action.h; path = "source/musichackday-viz/cocos2d/Action.h"; sourceTree = DEVELOPER_DIR; };
 		E1B377611008D05100A88D3B /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Action.m; path = "source/musichackday-viz/cocos2d/Action.m"; sourceTree = DEVELOPER_DIR; };
 		E1B377621008D05100A88D3B /* AtlasNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AtlasNode.h; path = "source/musichackday-viz/cocos2d/AtlasNode.h"; sourceTree = DEVELOPER_DIR; };
@@ -289,6 +291,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D96355191008E7DF002A8976 /* narrier.mp3 */,
 				E1B379AE1008D24600A88D3B /* cocosView.xib */,
 				E1B3792E1008D05F00A88D3B /* cocos2d-Icon.png */,
 				E1B3792F1008D05F00A88D3B /* fps_images.png */,
@@ -502,6 +505,7 @@
 				E1B379351008D05F00A88D3B /* Icon.png in Resources */,
 				E1B379AF1008D24600A88D3B /* cocosView.xib in Resources */,
 				E1B37A761008DE6A00A88D3B /* AnalyzingViewController.xib in Resources */,
+				D963551A1008E7DF002A8976 /* narrier.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
