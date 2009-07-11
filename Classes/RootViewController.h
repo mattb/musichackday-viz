@@ -11,10 +11,12 @@
 
 @interface RootViewController : UITableViewController {
 	NSMutableArray *trackList;
+    NSMutableArray *trackUrls;
 	AnalyzingViewController *analyzingViewController;
 	VisualizationViewController *visualizationViewController;
 }
 @property (nonatomic, retain) NSMutableArray *trackList;
+@property (nonatomic, retain) NSMutableArray *trackUrls;
 @property (nonatomic, retain) AnalyzingViewController *analyzingViewController;
 @property (nonatomic, retain) VisualizationViewController *visualizationViewController;
 

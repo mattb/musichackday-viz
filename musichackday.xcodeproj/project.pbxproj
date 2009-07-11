@@ -23,6 +23,8 @@
 		D999FA3410090212009C13B9 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D999FA2F10090212009C13B9 /* SBJSON.m */; };
 		D999FA3510090212009C13B9 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D999FA3110090212009C13B9 /* NSObject+SBJSON.m */; };
 		D999FA3610090212009C13B9 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D999FA3310090212009C13B9 /* NSString+SBJSON.m */; };
+		D999FA6C10090432009C13B9 /* GTMSystemVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = D999FA6610090432009C13B9 /* GTMSystemVersion.m */; };
+		D999FA6D10090432009C13B9 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D999FA6910090432009C13B9 /* GTMHTTPFetcher.m */; };
 		E1B378981008D05100A88D3B /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B377611008D05100A88D3B /* Action.m */; };
 		E1B378991008D05100A88D3B /* AtlasNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B377631008D05100A88D3B /* AtlasNode.m */; };
 		E1B3789A1008D05100A88D3B /* AtlasSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B377651008D05100A88D3B /* AtlasSprite.m */; };
@@ -123,6 +125,13 @@
 		D999FA3110090212009C13B9 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
 		D999FA3210090212009C13B9 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
 		D999FA3310090212009C13B9 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		D999FA6510090432009C13B9 /* GTMGarbageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMGarbageCollection.h; sourceTree = "<group>"; };
+		D999FA6610090432009C13B9 /* GTMSystemVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSystemVersion.m; sourceTree = "<group>"; };
+		D999FA6710090432009C13B9 /* GTMDebugSelectorValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDebugSelectorValidation.h; sourceTree = "<group>"; };
+		D999FA6810090432009C13B9 /* GTMSystemVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSystemVersion.h; sourceTree = "<group>"; };
+		D999FA6910090432009C13B9 /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
+		D999FA6A10090432009C13B9 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		D999FA6B10090432009C13B9 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		E1B377601008D05100A88D3B /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Action.h; path = "source/musichackday-viz/cocos2d/Action.h"; sourceTree = DEVELOPER_DIR; };
 		E1B377611008D05100A88D3B /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Action.m; path = "source/musichackday-viz/cocos2d/Action.m"; sourceTree = DEVELOPER_DIR; };
 		E1B377621008D05100A88D3B /* AtlasNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AtlasNode.h; path = "source/musichackday-viz/cocos2d/AtlasNode.h"; sourceTree = DEVELOPER_DIR; };
@@ -308,6 +317,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D999FA6410090432009C13B9 /* Google Toolbox */,
 				D999FA20100901F8009C13B9 /* JSON */,
 				D999F9EA1008FE2A009C13B9 /* libSoundCloudAPI.a */,
 				D999F9EB1008FE2A009C13B9 /* SCSoundCloudAPIConfiguration.h */,
@@ -376,6 +386,20 @@
 				D999FA3310090212009C13B9 /* NSString+SBJSON.m */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		D999FA6410090432009C13B9 /* Google Toolbox */ = {
+			isa = PBXGroup;
+			children = (
+				D999FA6510090432009C13B9 /* GTMGarbageCollection.h */,
+				D999FA6610090432009C13B9 /* GTMSystemVersion.m */,
+				D999FA6710090432009C13B9 /* GTMDebugSelectorValidation.h */,
+				D999FA6810090432009C13B9 /* GTMSystemVersion.h */,
+				D999FA6910090432009C13B9 /* GTMHTTPFetcher.m */,
+				D999FA6A10090432009C13B9 /* GTMHTTPFetcher.h */,
+				D999FA6B10090432009C13B9 /* GTMDefines.h */,
+			);
+			name = "Google Toolbox";
 			sourceTree = "<group>";
 		};
 		E1B3775F1008D05100A88D3B /* cocos2d */ = {
@@ -637,6 +661,8 @@
 				D999FA3410090212009C13B9 /* SBJSON.m in Sources */,
 				D999FA3510090212009C13B9 /* NSObject+SBJSON.m in Sources */,
 				D999FA3610090212009C13B9 /* NSString+SBJSON.m in Sources */,
+				D999FA6C10090432009C13B9 /* GTMSystemVersion.m in Sources */,
+				D999FA6D10090432009C13B9 /* GTMHTTPFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

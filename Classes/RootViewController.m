@@ -7,6 +7,9 @@
 //
 
 #import "RootViewController.h"
+#import "GTMHTTPFetcher.h"
+#import "NSString+SBJSON.h"
+
 @interface RootViewController(Private)
 -(void) visualizeTrack;
 -(void) analyzeTrack;
@@ -15,7 +18,7 @@
 
 
 @implementation RootViewController
-@synthesize trackList, analyzingViewController, visualizationViewController;
+@synthesize trackUrls, trackList, analyzingViewController, visualizationViewController;
 static NSArray *trackNames = nil;
 
 - (void)dealloc{
@@ -31,17 +34,41 @@ static NSArray *trackNames = nil;
 	self.title = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"];
 	
 	self.trackList = [NSMutableArray array];
+    self.trackUrls = [NSMutableArray array];
     if (!trackNames)
 	{
-		trackNames = [[NSArray alloc] initWithObjects:@"track one", @"track two", @"track three", nil];
+		trackNames = [[NSArray alloc] initWithObjects:@"loading...", nil];
     }
-	
+
     for (NSString *trackName in trackNames)
 	{
 		[self.trackList addObject:trackName];
 	}
+	[self.tableView reloadData];	
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.sandbox-soundcloud.com/users/forss/tracks.json"]];
+    GTMHTTPFetcher* myFetcher = [GTMHTTPFetcher httpFetcherWithRequest:request];
+    [myFetcher setCredential:[NSURLCredential credentialWithUser:@"mattb" password:@"biddulph" persistence:NSURLCredentialPersistenceNone]];
+    [myFetcher beginFetchWithDelegate:self
+					didFinishSelector:@selector(myFetcher:finishedWithData:)
+                      didFailSelector:@selector(myFetcher:failedWithError:)];
+    
+}
+
+- (void)myFetcher:(GTMHTTPFetcher *)fetcher finishedWithData:(NSData *)data {
+    NSString *json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSArray *tracks = [json JSONValue];
+    [self.trackList removeAllObjects];
+    [self.trackUrls removeAllObjects];
+    for(NSDictionary *track in tracks) {
+        NSString *title = [track objectForKey:@"title"];
+        NSLog(@"%@", title);
+        [self.trackList addObject:title];
+	}
 	[self.tableView reloadData];
-	
+}
+
+- (void)myFetcher:(GTMHTTPFetcher *)fetcher failedWithError:(NSError *)error {
+	NSLog(@"ERROR: %@", error);
 }
 
 - (void)viewDidUnload
