@@ -1,14 +1,13 @@
 
 #import <UIKit/UIKit.h>
 #include <sys/time.h>
-#import "CocosTest.h"
+#import "CocosView.h"
 
 // cocos2d import
 #import "cocos2d.h"
 
 // local import
 #import "VisualisationViewController.h"
-
 
 enum {
 	kStateRun,
@@ -23,11 +22,21 @@ enum {
 -(void) detachView;
 -(void) runCocos2d;
 -(void) endCocos2d;
+-(void) tick;
 @end
 
 // CLASS IMPLEMENTATIONS
 @implementation VisualizationViewController
-@synthesize player;
+@synthesize player, trackInfo, cocosView, timer;
+
+
+- (void) dealloc {
+	[trackInfo release];
+	[player release];
+	[cocosView release];
+	[timer release];
+	[super dealloc];
+}
 
 enum {
 	kTagAttach = 1,
@@ -43,10 +52,12 @@ enum {
 -(void) runCocos2d
 {
 	if( state == kStateEnd ) {
-		[[Director sharedDirector] attachInView:self.view withFrame:CGRectMake(0, 0, 250,350)];
+		
+		[[Director sharedDirector] attachInView:self.view withFrame:CGRectMake(0, 0, 320,400)];
 		
 		Scene *scene = [Scene node];
-		id node = [CocosTest node];
+		self.cocosView = [[CocosView alloc] init];
+		id node = self.cocosView;
 		[scene addChild: node];
 		
 		[[Director sharedDirector] runWithScene:scene];
@@ -58,7 +69,8 @@ enum {
         }
         self.player.delegate = self;
         [self.player play];
-		
+		self.timer = [NSTimer scheduledTimerWithTimeInterval:0.01
+				target:self selector:@selector(tick) userInfo:nil repeats:YES];
 		state = kStateRun;
 	}
 	else {
@@ -108,6 +120,8 @@ enum {
 
 #pragma mark -
 #pragma mark Segment Delegate
+
+//TODO - call this when we leave the view...
 - (void)segmentAction:(id)sender
 {	
 	int idx = [sender selectedSegmentIndex];
@@ -135,11 +149,24 @@ enum {
 	[[Director sharedDirector] setAnimationInterval:1/240.0f];
 
 	state = kStateEnd;
-	
+}
+
+-(void) viewDidAppear:(BOOL)animated{
 	[self runCocos2d];
 }
 
 
 #pragma mark -
-#pragma mark Init
+#pragma mark 
+
+					  
+-(void) tick{
+	float trackTime = [self.player currentTime];
+	ENSegment *segment = [ self.trackInfo segmentForMillisecond:trackTime];
+	if ( segment){
+		[cocosView updateSegmentInfo: segment];
+	}
+}
+
+
 @end

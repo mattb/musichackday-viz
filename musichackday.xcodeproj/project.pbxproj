@@ -81,7 +81,13 @@
 		E1B37A761008DE6A00A88D3B /* AnalyzingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B37A751008DE6A00A88D3B /* AnalyzingViewController.xib */; };
 		E1B37AAB1008E40E00A88D3B /* VisualizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B37AAA1008E40E00A88D3B /* VisualizationViewController.m */; };
 		E1B37AB41008E63800A88D3B /* VisualizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B37AB31008E63800A88D3B /* VisualizationViewController.xib */; };
-		E1B37ABE1008E77800A88D3B /* CocosTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B37ABD1008E77800A88D3B /* CocosTest.m */; };
+		E1B37B7D1008F14E00A88D3B /* TrackSegmentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B37B7C1008F14E00A88D3B /* TrackSegmentInfo.m */; };
+		E1B37C42100906E500A88D3B /* fire.pvr in Resources */ = {isa = PBXBuildFile; fileRef = E1B37C41100906E500A88D3B /* fire.pvr */; };
+		E1B37C46100906FD00A88D3B /* FireBall.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B37C45100906FD00A88D3B /* FireBall.m */; };
+		E1B37C491009070F00A88D3B /* BaseVisualizationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B37C481009070F00A88D3B /* BaseVisualizationItem.m */; };
+		E1B37C561009082300A88D3B /* CocosView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B37C551009082300A88D3B /* CocosView.m */; };
+		E1B37CF91009179000A88D3B /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B37CF81009179000A88D3B /* fire.png */; };
+		E1B37D6310091CD300A88D3B /* Spike.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B37D6210091CD300A88D3B /* Spike.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -224,8 +230,19 @@
 		E1B37AA91008E40E00A88D3B /* VisualizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VisualizationViewController.h; path = "source/musichackday-viz/Classes/VisualisationViewController.h"; sourceTree = DEVELOPER_DIR; };
 		E1B37AAA1008E40E00A88D3B /* VisualizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VisualizationViewController.m; path = "source/musichackday-viz/Classes/VisualisationViewController.m"; sourceTree = DEVELOPER_DIR; };
 		E1B37AB31008E63800A88D3B /* VisualizationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = VisualizationViewController.xib; path = "source/musichackday-viz/VisualizationViewController.xib"; sourceTree = DEVELOPER_DIR; };
-		E1B37ABC1008E77800A88D3B /* CocosTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CocosTest.h; path = "source/musichackday-viz/Classes/CocosTest.h"; sourceTree = DEVELOPER_DIR; };
-		E1B37ABD1008E77800A88D3B /* CocosTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CocosTest.m; path = "source/musichackday-viz/Classes/CocosTest.m"; sourceTree = DEVELOPER_DIR; };
+		E1B37B7B1008F14E00A88D3B /* TrackSegmentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackSegmentInfo.h; path = "source/musichackday-viz/Classes/TrackSegmentInfo.h"; sourceTree = DEVELOPER_DIR; };
+		E1B37B7C1008F14E00A88D3B /* TrackSegmentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackSegmentInfo.m; path = "source/musichackday-viz/Classes/TrackSegmentInfo.m"; sourceTree = DEVELOPER_DIR; };
+		E1B37C41100906E500A88D3B /* fire.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; name = fire.pvr; path = "source/musichackday-viz/fire.pvr"; sourceTree = DEVELOPER_DIR; };
+		E1B37C44100906FD00A88D3B /* FireBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FireBall.h; path = "source/musichackday-viz/Classes/FireBall.h"; sourceTree = DEVELOPER_DIR; };
+		E1B37C45100906FD00A88D3B /* FireBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FireBall.m; path = "source/musichackday-viz/Classes/FireBall.m"; sourceTree = DEVELOPER_DIR; };
+		E1B37C471009070F00A88D3B /* BaseVisualizationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseVisualizationItem.h; path = "source/musichackday-viz/Classes/BaseVisualizationItem.h"; sourceTree = DEVELOPER_DIR; };
+		E1B37C481009070F00A88D3B /* BaseVisualizationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseVisualizationItem.m; path = "source/musichackday-viz/Classes/BaseVisualizationItem.m"; sourceTree = DEVELOPER_DIR; };
+		E1B37C541009082300A88D3B /* CocosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CocosView.h; path = "source/musichackday-viz/Classes/CocosView.h"; sourceTree = DEVELOPER_DIR; };
+		E1B37C551009082300A88D3B /* CocosView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CocosView.m; path = "source/musichackday-viz/Classes/CocosView.m"; sourceTree = DEVELOPER_DIR; };
+		E1B37CF81009179000A88D3B /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = "source/musichackday-viz/fire.png"; sourceTree = DEVELOPER_DIR; };
+		E1B37D0F100919BA00A88D3B /* SegmentAwareNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SegmentAwareNode.h; path = "source/musichackday-viz/Classes/SegmentAwareNode.h"; sourceTree = DEVELOPER_DIR; };
+		E1B37D6110091CD300A88D3B /* Spike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Spike.h; path = "source/musichackday-viz/Classes/Spike.h"; sourceTree = DEVELOPER_DIR; };
+		E1B37D6210091CD300A88D3B /* Spike.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Spike.m; path = "source/musichackday-viz/Classes/Spike.m"; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,8 +272,6 @@
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* musichackdayAppDelegate.h */,
 				1D3623250D0F684500981E51 /* musichackdayAppDelegate.m */,
-				E1B37A6F1008DC9000A88D3B /* AnalyzingViewController.h */,
-				E1B37A701008DC9000A88D3B /* AnalyzingViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -300,6 +315,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E1B37CF81009179000A88D3B /* fire.png */,
+				E1B37C41100906E500A88D3B /* fire.pvr */,
 				E1B37AB31008E63800A88D3B /* VisualizationViewController.xib */,
 				D96355191008E7DF002A8976 /* narrier.mp3 */,
 				E1B379AE1008D24600A88D3B /* cocosView.xib */,
@@ -461,12 +478,31 @@
 		E1B37AB11008E53400A88D3B /* Visualization */ = {
 			isa = PBXGroup;
 			children = (
+				E1B37C43100906EC00A88D3B /* Items */,
+				E1B37A6F1008DC9000A88D3B /* AnalyzingViewController.h */,
+				E1B37A701008DC9000A88D3B /* AnalyzingViewController.m */,
 				E1B37AA91008E40E00A88D3B /* VisualizationViewController.h */,
 				E1B37AAA1008E40E00A88D3B /* VisualizationViewController.m */,
-				E1B37ABC1008E77800A88D3B /* CocosTest.h */,
-				E1B37ABD1008E77800A88D3B /* CocosTest.m */,
+				E1B37B7B1008F14E00A88D3B /* TrackSegmentInfo.h */,
+				E1B37B7C1008F14E00A88D3B /* TrackSegmentInfo.m */,
+				E1B37C541009082300A88D3B /* CocosView.h */,
+				E1B37C551009082300A88D3B /* CocosView.m */,
 			);
 			name = Visualization;
+			sourceTree = "<group>";
+		};
+		E1B37C43100906EC00A88D3B /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				E1B37C44100906FD00A88D3B /* FireBall.h */,
+				E1B37C45100906FD00A88D3B /* FireBall.m */,
+				E1B37C471009070F00A88D3B /* BaseVisualizationItem.h */,
+				E1B37C481009070F00A88D3B /* BaseVisualizationItem.m */,
+				E1B37D0F100919BA00A88D3B /* SegmentAwareNode.h */,
+				E1B37D6110091CD300A88D3B /* Spike.h */,
+				E1B37D6210091CD300A88D3B /* Spike.m */,
+			);
+			name = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -528,6 +564,8 @@
 				E1B37A761008DE6A00A88D3B /* AnalyzingViewController.xib in Resources */,
 				E1B37AB41008E63800A88D3B /* VisualizationViewController.xib in Resources */,
 				D963551A1008E7DF002A8976 /* narrier.mp3 in Resources */,
+				E1B37C42100906E500A88D3B /* fire.pvr in Resources */,
+				E1B37CF91009179000A88D3B /* fire.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,10 +629,14 @@
 				E1B378C71008D05100A88D3B /* Transition.m in Sources */,
 				E1B37A711008DC9000A88D3B /* AnalyzingViewController.m in Sources */,
 				E1B37AAB1008E40E00A88D3B /* VisualizationViewController.m in Sources */,
-				E1B37ABE1008E77800A88D3B /* CocosTest.m in Sources */,
 				D96355091008E3C3002A8976 /* EchoNest.m in Sources */,
 				D963550A1008E3C3002A8976 /* ENArtist.m in Sources */,
 				D963550B1008E3C3002A8976 /* ENTrack.m in Sources */,
+				E1B37B7D1008F14E00A88D3B /* TrackSegmentInfo.m in Sources */,
+				E1B37C46100906FD00A88D3B /* FireBall.m in Sources */,
+				E1B37C491009070F00A88D3B /* BaseVisualizationItem.m in Sources */,
+				E1B37C561009082300A88D3B /* CocosView.m in Sources */,
+				E1B37D6310091CD300A88D3B /* Spike.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

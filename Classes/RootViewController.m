@@ -7,10 +7,11 @@
 //
 
 #import "RootViewController.h"
+#import "TrackSegmentInfo.h"
 @interface RootViewController(Private)
--(void) visualizeTrack;
--(void) analyzeTrack;
-
+-(void) navigateToAnalyzeTrack;
+-(void) navigateToVisualizeTrack;
+-(void) startVisualization: (NSNotification *)notification;
 @end
 
 
@@ -41,7 +42,9 @@ static NSArray *trackNames = nil;
 		[self.trackList addObject:trackName];
 	}
 	[self.tableView reloadData];
-	
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(startVisualization:)
+												 name:@"startVisualization" object:nil];
 }
 
 - (void)viewDidUnload
@@ -91,10 +94,10 @@ static NSArray *trackNames = nil;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	[self analyzeTrack];
+	[self navigateToAnalyzeTrack];
 }
 
--(void) analyzeTrack{
+-(void) navigateToAnalyzeTrack{
 	if (!self.analyzingViewController)
 	{
         self.analyzingViewController = [[AnalyzingViewController alloc] 
@@ -104,14 +107,14 @@ static NSArray *trackNames = nil;
 	
 }
 
--(void) visualizeTrack{
+-(void) startVisualization: (NSNotification *)notification{
 	if (!self.visualizationViewController)
 	{
         self.visualizationViewController = [[VisualizationViewController alloc] 
 										initWithNibName:@"VisualizationViewController" bundle:nil];
     }
+	self.visualizationViewController.trackInfo = [notification object];
     [self.navigationController pushViewController:visualizationViewController animated:YES];
-	
 }
 
 @end

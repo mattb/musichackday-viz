@@ -7,6 +7,7 @@
 //
 
 #import "AnalyzingViewController.h"
+#import "TrackSegmentInfo.h"
 
 
 @implementation AnalyzingViewController
@@ -79,8 +80,11 @@
         status.text = @"Track segments analysed.";
         self._segments = [not object];
         _segment_idx = 0;
-        [NSTimer scheduledTimerWithTimeInterval:1/100 target:self selector:@selector(tick) userInfo:nil repeats:TRUE];
+//        [NSTimer scheduledTimerWithTimeInterval:1/100 target:self selector:@selector(tick) userInfo:nil repeats:TRUE];
+		[[NSNotificationCenter defaultCenter]
+				postNotificationName:@"startVisualization" object:[[TrackSegmentInfo alloc] initWithArray:self._segments]];
     }
 }
+
 
 @end

@@ -11,10 +11,13 @@
 
 @interface TrackSegmentInfo : NSObject {
 	NSArray *segmentInfo;
+	float currentIndex;
+	float totalSegments;
 }
 
 - (id) initWithArray: (NSArray *) segments;
 
--(ENSegment *)getSementForMillisecond: (float) millisecond;
+- (ENSegment *) segmentForMillisecond: (float) millisecond;
+
 
 @end
