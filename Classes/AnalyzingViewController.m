@@ -7,38 +7,58 @@
 //
 
 #import "AnalyzingViewController.h"
-
+#import "GTMHTTPFetcher.h"
 
 @implementation AnalyzingViewController
-@synthesize _echoNest, _segments, _track;
+@synthesize _echoNest, _segments, _track, url, filename;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
 	if (!(self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]))
         return nil;
 	
-    self.title = @"Analyzin...";
+    self.title = @"Analyzing...";
 	
 	return self;
 }
 
 - (void)viewDidLoad{
 	//TODO - add code to move to next view when analyzed
-    NSString *APIKey = [NSString stringWithString:@"BPUEM3CGXP8KASYEL"];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ENKeyValidated:) name:@"ENApiKeyIsValid" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ENTrackUploadFinished:) name:@"ENTrackUploadFinished" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ENTrackTempoLoaded:) name:@"ENTrackTempoLoaded" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ENTrackUploadValidationFinished:) name:@"ENUploadValidationFinished" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ENTrackSegmentsLoaded:) name:@"ENTrackSegmentsLoaded" object:nil];
-    
-    self._echoNest = [[EchoNest alloc] initWithAPIKey:APIKey];        
+        
+    NSLog(@"%@", self.url);
+    status.text = @"Downloading MP3...";
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.url]];
+    GTMHTTPFetcher* myFetcher = [GTMHTTPFetcher httpFetcherWithRequest:request];
+    [myFetcher beginFetchWithDelegate:self
+                didFinishSelector:@selector(myFetcher:finishedWithData:)
+                  didFailSelector:@selector(myFetcher:failedWithError:)];
 }
 
+- (void)myFetcher:(GTMHTTPFetcher *)fetcher finishedWithData:(NSData *)data {
+    NSArray *searchPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); 
+    NSString *documentFolderPath = [searchPaths objectAtIndex: 0]; 
+    self.filename = [documentFolderPath stringByAppendingPathComponent: @"file.mp3"];
+    [[NSFileManager defaultManager] createFileAtPath:self.filename contents:data attributes:nil];
+    NSLog(@"%@", self.filename);
+
+    NSString *APIKey = [NSString stringWithString:@"BPUEM3CGXP8KASYEL"];
+    self._echoNest = [[EchoNest alloc] initWithAPIKey:APIKey];   
+}
+
+- (void)myFetcher:(GTMHTTPFetcher *)fetcher failedWithError:(NSError *)error {
+	NSLog(@"ERROR: %@", error);
+}
 
 -(void)ENKeyValidated:(NSNotification*)not {
     if ([[not object] boolValue]) {
-        status.text = @"Key valid.";
-        [self._echoNest uploadFile:[[NSBundle mainBundle] pathForResource:@"narrier" ofType:@"mp3"]];
+        status.text = @"Key valid, uploading file.";
+        // [self._echoNest uploadFile:[[NSBundle mainBundle] pathForResource:@"narrier" ofType:@"mp3"]];
+        [self._echoNest uploadFile:self.filename];
 	} else {
         status.text = @"Invalid key";
     }
@@ -79,7 +99,7 @@
         status.text = @"Track segments analysed.";
         self._segments = [not object];
         _segment_idx = 0;
-        [NSTimer scheduledTimerWithTimeInterval:1/100 target:self selector:@selector(tick) userInfo:nil repeats:TRUE];
+        // [NSTimer scheduledTimerWithTimeInterval:1/100 target:self selector:@selector(tick) userInfo:nil repeats:TRUE];
     }
 }
 

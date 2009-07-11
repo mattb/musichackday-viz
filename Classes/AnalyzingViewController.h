@@ -17,10 +17,14 @@
     ENTrack *_track;
     NSArray *_segments;
     int _segment_idx;
+    NSString *url;
+    NSString *filename;
 }
 
 @property (nonatomic, retain) EchoNest *_echoNest;
 @property (nonatomic, retain) NSArray *_segments;
 @property (nonatomic, retain) ENTrack *_track;
+@property (nonatomic, retain) NSString *url;
+@property (nonatomic, retain) NSString *filename;
 
 @end

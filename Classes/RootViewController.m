@@ -12,7 +12,7 @@
 
 @interface RootViewController(Private)
 -(void) visualizeTrack;
--(void) analyzeTrack;
+-(void) analyzeTrack:(NSString *)url;
 
 @end
 
@@ -61,8 +61,12 @@ static NSArray *trackNames = nil;
     [self.trackUrls removeAllObjects];
     for(NSDictionary *track in tracks) {
         NSString *title = [track objectForKey:@"title"];
-        NSLog(@"%@", title);
-        [self.trackList addObject:title];
+        if([track objectForKey:@"downloadable"]) {
+            [self.trackList addObject:title];
+            [self.trackUrls addObject:[track objectForKey:@"download_url"]];
+        } else {
+            NSLog(@"%@ is not downloadable.");
+        }
 	}
 	[self.tableView reloadData];
 }
@@ -118,17 +122,17 @@ static NSArray *trackNames = nil;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	[self analyzeTrack];
+	[self analyzeTrack:[trackUrls objectAtIndex:indexPath.row]];
 }
 
--(void) analyzeTrack{
+-(void) analyzeTrack:(NSString *)url {
 	if (!self.analyzingViewController)
 	{
         self.analyzingViewController = [[AnalyzingViewController alloc] 
 										initWithNibName:@"AnalyzingViewController" bundle:nil];
     }
+    self.analyzingViewController.url = url;
     [self.navigationController pushViewController:analyzingViewController animated:YES];
-	
 }
 
 -(void) visualizeTrack{
