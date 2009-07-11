@@ -7,10 +7,15 @@
 //
 
 #import "RootViewController.h"
+@interface RootViewController(Private)
+-(void) visualizeTrack;
+-(void) analyzeTrack;
+
+@end
 
 
 @implementation RootViewController
-@synthesize trackList, analyzingViewController;
+@synthesize trackList, analyzingViewController, visualizationViewController;
 static NSArray *trackNames = nil;
 
 - (void)dealloc{
@@ -86,14 +91,27 @@ static NSArray *trackNames = nil;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //NSMutableDictionary *rowData = [self.trackList objectAtIndex:indexPath.row];
-	//TODO - wire up the current playing track
+	[self analyzeTrack];
+}
+
+-(void) analyzeTrack{
 	if (!self.analyzingViewController)
 	{
         self.analyzingViewController = [[AnalyzingViewController alloc] 
-								initWithNibName:@"AnalyzingViewController" bundle:nil];
+										initWithNibName:@"AnalyzingViewController" bundle:nil];
     }
     [self.navigationController pushViewController:analyzingViewController animated:YES];
+	
+}
+
+-(void) visualizeTrack{
+	if (!self.visualizationViewController)
+	{
+        self.visualizationViewController = [[VisualizationViewController alloc] 
+										initWithNibName:@"VisualizationViewController" bundle:nil];
+    }
+    [self.navigationController pushViewController:visualizationViewController animated:YES];
+	
 }
 
 @end

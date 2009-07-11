@@ -7,12 +7,15 @@
 //
 
 #import "AnalyzingViewController.h"
+#import "VisualisationViewController.h"
 
 @interface RootViewController : UITableViewController {
 	NSMutableArray *trackList;
 	AnalyzingViewController *analyzingViewController;
+	VisualizationViewController *visualizationViewController;
 }
 @property (nonatomic, retain) NSMutableArray *trackList;
 @property (nonatomic, retain) AnalyzingViewController *analyzingViewController;
+@property (nonatomic, retain) VisualizationViewController *visualizationViewController;
 
 @end

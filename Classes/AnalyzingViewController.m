@@ -21,8 +21,7 @@
 	return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
 	//TODO - add code to move to next view when analyzed
 }
 
