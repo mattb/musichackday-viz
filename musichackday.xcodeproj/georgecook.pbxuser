@@ -1,0 +1,150 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* musichackday */ = {
+		activeExec = 0;
+		executables = (
+			E1BCF18F1008CDBC0096DA91 /* musichackday */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = E1BCF18F1008CDBC0096DA91 /* musichackday */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* musichackday */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* musichackday */,
+		);
+		codeSenseManager = E1BCF1941008CDDB0096DA91 /* Code sense */;
+		executables = (
+			E1BCF18F1008CDBC0096DA91 /* musichackday */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					301,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 269012972;
+			PBXWorkspaceStateSaveDate = 269012972;
+		};
+		perUserProjectItems = {
+			E1B379531008D08900A88D3B /* XCBuildMessageTextBookmark */ = E1B379531008D08900A88D3B /* XCBuildMessageTextBookmark */;
+			E1B379541008D08900A88D3B /* PBXTextBookmark */ = E1B379541008D08900A88D3B /* PBXTextBookmark */;
+		};
+		sourceControlManager = E1BCF1931008CDDB0096DA91 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	E1B378821008D05100A88D3B /* ivorbisfile_example.c */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.c;
+		name = ivorbisfile_example.c;
+		path = "/Developer/source/musichackday-viz/external/Tremor/ivorbisfile_example.c";
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {537, 1053}}";
+			sepNavSelRange = "{1169, 0}";
+			sepNavVisRange = "{964, 390}";
+		};
+	};
+	E1B379531008D08900A88D3B /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Vorbis/ivorbiscodec.h: No such file or directory";
+		fRef = E1B378821008D05100A88D3B /* ivorbisfile_example.c */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 23;
+		rType = 1;
+	};
+	E1B379541008D08900A88D3B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E1B378821008D05100A88D3B /* ivorbisfile_example.c */;
+		name = "ivorbisfile_example.c: 24";
+		rLen = 0;
+		rLoc = 1169;
+		rType = 0;
+		vrLen = 390;
+		vrLoc = 964;
+	};
+	E1BCF18F1008CDBC0096DA91 /* musichackday */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = musichackday;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	E1BCF1931008CDDB0096DA91 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	E1BCF1941008CDDB0096DA91 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
