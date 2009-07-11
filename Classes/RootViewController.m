@@ -14,8 +14,6 @@
 -(void) navigateToAnalyzeTrack;
 -(void) navigateToVisualizeTrack;
 -(void) startVisualization: (NSNotification *)notification;
-
-@interface RootViewController(Private)
 -(void) visualizeTrack;
 -(void) analyzeTrack:(NSString *)url;
 
@@ -132,11 +130,11 @@ static NSArray *trackNames = nil;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	[self navigateToAnalyzeTrack];
+	[self analyzeTrack:[trackUrls objectAtIndex:indexPath.row]];
 }
 
 -(void) navigateToAnalyzeTrack{
-	[self analyzeTrack:[trackUrls objectAtIndex:indexPath.row]];
+	[self navigateToAnalyzeTrack];
 }
 
 -(void) analyzeTrack:(NSString *)url {
