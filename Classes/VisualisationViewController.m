@@ -27,6 +27,7 @@ enum {
 
 // CLASS IMPLEMENTATIONS
 @implementation VisualizationViewController
+@synthesize player;
 
 enum {
 	kTagAttach = 1,
@@ -49,6 +50,14 @@ enum {
 		[scene addChild: node];
 		
 		[[Director sharedDirector] runWithScene:scene];
+        
+        NSURL *fileURL = [[NSURL alloc] initFileURLWithPath: [[NSBundle mainBundle] pathForResource:@"narrier" ofType:@"mp3"]];
+        self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+        if(!([self.player prepareToPlay])){
+            NSLog(@"audioPlayer:prepareToPlay returned FALSE");
+        }
+        self.player.delegate = self;
+        [self.player play];
 		
 		state = kStateRun;
 	}
