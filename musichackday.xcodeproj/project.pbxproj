@@ -19,6 +19,10 @@
 		D963550A1008E3C3002A8976 /* ENArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = D96355061008E3C3002A8976 /* ENArtist.m */; };
 		D963550B1008E3C3002A8976 /* ENTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = D96355081008E3C3002A8976 /* ENTrack.m */; };
 		D963551A1008E7DF002A8976 /* narrier.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D96355191008E7DF002A8976 /* narrier.mp3 */; };
+		D999F9F01008FE2A009C13B9 /* libSoundCloudAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D999F9EA1008FE2A009C13B9 /* libSoundCloudAPI.a */; };
+		D999FA3410090212009C13B9 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D999FA2F10090212009C13B9 /* SBJSON.m */; };
+		D999FA3510090212009C13B9 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D999FA3110090212009C13B9 /* NSObject+SBJSON.m */; };
+		D999FA3610090212009C13B9 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D999FA3310090212009C13B9 /* NSString+SBJSON.m */; };
 		E1B378981008D05100A88D3B /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B377611008D05100A88D3B /* Action.m */; };
 		E1B378991008D05100A88D3B /* AtlasNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B377631008D05100A88D3B /* AtlasNode.m */; };
 		E1B3789A1008D05100A88D3B /* AtlasSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B377651008D05100A88D3B /* AtlasSprite.m */; };
@@ -106,6 +110,19 @@
 		D96355071008E3C3002A8976 /* ENTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENTrack.h; sourceTree = "<group>"; };
 		D96355081008E3C3002A8976 /* ENTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENTrack.m; sourceTree = "<group>"; };
 		D96355191008E7DF002A8976 /* narrier.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = narrier.mp3; sourceTree = "<group>"; };
+		D999F9EA1008FE2A009C13B9 /* libSoundCloudAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSoundCloudAPI.a; sourceTree = "<group>"; };
+		D999F9EB1008FE2A009C13B9 /* SCSoundCloudAPIConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSoundCloudAPIConfiguration.h; sourceTree = "<group>"; };
+		D999F9EC1008FE2A009C13B9 /* SCSoundCloudAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSoundCloudAPI.h; sourceTree = "<group>"; };
+		D999F9ED1008FE2A009C13B9 /* SCInputStreamWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCInputStreamWrapper.h; sourceTree = "<group>"; };
+		D999F9EE1008FE2A009C13B9 /* SCAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAPI.h; sourceTree = "<group>"; };
+		D999F9EF1008FE2A009C13B9 /* SCAPIErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAPIErrors.h; sourceTree = "<group>"; };
+		D999FA2D10090212009C13B9 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		D999FA2E10090212009C13B9 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		D999FA2F10090212009C13B9 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		D999FA3010090212009C13B9 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		D999FA3110090212009C13B9 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		D999FA3210090212009C13B9 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		D999FA3310090212009C13B9 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
 		E1B377601008D05100A88D3B /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Action.h; path = "source/musichackday-viz/cocos2d/Action.h"; sourceTree = DEVELOPER_DIR; };
 		E1B377611008D05100A88D3B /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Action.m; path = "source/musichackday-viz/cocos2d/Action.m"; sourceTree = DEVELOPER_DIR; };
 		E1B377621008D05100A88D3B /* AtlasNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AtlasNode.h; path = "source/musichackday-viz/cocos2d/AtlasNode.h"; sourceTree = DEVELOPER_DIR; };
@@ -241,6 +258,7 @@
 				E1B379401008D07B00A88D3B /* OpenAL.framework in Frameworks */,
 				E1B379421008D07B00A88D3B /* OpenGLES.framework in Frameworks */,
 				E1B379441008D07B00A88D3B /* QuartzCore.framework in Frameworks */,
+				D999F9F01008FE2A009C13B9 /* libSoundCloudAPI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +308,13 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D999FA20100901F8009C13B9 /* JSON */,
+				D999F9EA1008FE2A009C13B9 /* libSoundCloudAPI.a */,
+				D999F9EB1008FE2A009C13B9 /* SCSoundCloudAPIConfiguration.h */,
+				D999F9EC1008FE2A009C13B9 /* SCSoundCloudAPI.h */,
+				D999F9ED1008FE2A009C13B9 /* SCInputStreamWrapper.h */,
+				D999F9EE1008FE2A009C13B9 /* SCAPI.h */,
+				D999F9EF1008FE2A009C13B9 /* SCAPIErrors.h */,
 				D96355011008E3C3002A8976 /* EchoNest */,
 				28A0AAE50D9B0CCF005BE974 /* musichackday_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
@@ -337,6 +362,20 @@
 				D96355081008E3C3002A8976 /* ENTrack.m */,
 			);
 			path = EchoNest;
+			sourceTree = "<group>";
+		};
+		D999FA20100901F8009C13B9 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				D999FA2D10090212009C13B9 /* JSON.h */,
+				D999FA2E10090212009C13B9 /* SBJSON.h */,
+				D999FA2F10090212009C13B9 /* SBJSON.m */,
+				D999FA3010090212009C13B9 /* NSObject+SBJSON.h */,
+				D999FA3110090212009C13B9 /* NSObject+SBJSON.m */,
+				D999FA3210090212009C13B9 /* NSString+SBJSON.h */,
+				D999FA3310090212009C13B9 /* NSString+SBJSON.m */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		E1B3775F1008D05100A88D3B /* cocos2d */ = {
@@ -595,6 +634,9 @@
 				D96355091008E3C3002A8976 /* EchoNest.m in Sources */,
 				D963550A1008E3C3002A8976 /* ENArtist.m in Sources */,
 				D963550B1008E3C3002A8976 /* ENTrack.m in Sources */,
+				D999FA3410090212009C13B9 /* SBJSON.m in Sources */,
+				D999FA3510090212009C13B9 /* NSObject+SBJSON.m in Sources */,
+				D999FA3610090212009C13B9 /* NSString+SBJSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +653,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = musichackday_Prefix.pch;
 				INFOPLIST_FILE = "musichackday-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = musichackday;
 			};
 			name = Debug;
@@ -623,6 +669,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = musichackday_Prefix.pch;
 				INFOPLIST_FILE = "musichackday-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = musichackday;
 			};
 			name = Release;
