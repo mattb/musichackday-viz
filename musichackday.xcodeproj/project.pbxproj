@@ -75,6 +75,9 @@
 		E1B379AF1008D24600A88D3B /* cocosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B379AE1008D24600A88D3B /* cocosView.xib */; };
 		E1B37A711008DC9000A88D3B /* AnalyzingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B37A701008DC9000A88D3B /* AnalyzingViewController.m */; };
 		E1B37A761008DE6A00A88D3B /* AnalyzingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B37A751008DE6A00A88D3B /* AnalyzingViewController.xib */; };
+		E1B37AAB1008E40E00A88D3B /* VisualizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B37AAA1008E40E00A88D3B /* VisualizationViewController.m */; };
+		E1B37AB41008E63800A88D3B /* VisualizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B37AB31008E63800A88D3B /* VisualizationViewController.xib */; };
+		E1B37ABE1008E77800A88D3B /* CocosTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B37ABD1008E77800A88D3B /* CocosTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -206,6 +209,11 @@
 		E1B37A6F1008DC9000A88D3B /* AnalyzingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnalyzingViewController.h; path = "source/musichackday-viz/Classes/AnalyzingViewController.h"; sourceTree = DEVELOPER_DIR; };
 		E1B37A701008DC9000A88D3B /* AnalyzingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnalyzingViewController.m; path = "source/musichackday-viz/Classes/AnalyzingViewController.m"; sourceTree = DEVELOPER_DIR; };
 		E1B37A751008DE6A00A88D3B /* AnalyzingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AnalyzingViewController.xib; path = "source/musichackday-viz/AnalyzingViewController.xib"; sourceTree = DEVELOPER_DIR; };
+		E1B37AA91008E40E00A88D3B /* VisualizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VisualizationViewController.h; path = "source/musichackday-viz/Classes/VisualisationViewController.h"; sourceTree = DEVELOPER_DIR; };
+		E1B37AAA1008E40E00A88D3B /* VisualizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VisualizationViewController.m; path = "source/musichackday-viz/Classes/VisualisationViewController.m"; sourceTree = DEVELOPER_DIR; };
+		E1B37AB31008E63800A88D3B /* VisualizationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = VisualizationViewController.xib; path = "source/musichackday-viz/VisualizationViewController.xib"; sourceTree = DEVELOPER_DIR; };
+		E1B37ABC1008E77800A88D3B /* CocosTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CocosTest.h; path = "source/musichackday-viz/Classes/CocosTest.h"; sourceTree = DEVELOPER_DIR; };
+		E1B37ABD1008E77800A88D3B /* CocosTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CocosTest.m; path = "source/musichackday-viz/Classes/CocosTest.m"; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +238,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E1B37AB11008E53400A88D3B /* Visualization */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* musichackdayAppDelegate.h */,
@@ -278,6 +287,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E1B37AB31008E63800A88D3B /* VisualizationViewController.xib */,
 				E1B379AE1008D24600A88D3B /* cocosView.xib */,
 				E1B3792E1008D05F00A88D3B /* cocos2d-Icon.png */,
 				E1B3792F1008D05F00A88D3B /* fps_images.png */,
@@ -420,6 +430,17 @@
 			path = "source/musichackday-viz/cocos2d/Support";
 			sourceTree = DEVELOPER_DIR;
 		};
+		E1B37AB11008E53400A88D3B /* Visualization */ = {
+			isa = PBXGroup;
+			children = (
+				E1B37AA91008E40E00A88D3B /* VisualizationViewController.h */,
+				E1B37AAA1008E40E00A88D3B /* VisualizationViewController.m */,
+				E1B37ABC1008E77800A88D3B /* CocosTest.h */,
+				E1B37ABD1008E77800A88D3B /* CocosTest.m */,
+			);
+			name = Visualization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -477,6 +498,7 @@
 				E1B379351008D05F00A88D3B /* Icon.png in Resources */,
 				E1B379AF1008D24600A88D3B /* cocosView.xib in Resources */,
 				E1B37A761008DE6A00A88D3B /* AnalyzingViewController.xib in Resources */,
+				E1B37AB41008E63800A88D3B /* VisualizationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +561,8 @@
 				E1B378C61008D05100A88D3B /* TouchHandler.m in Sources */,
 				E1B378C71008D05100A88D3B /* Transition.m in Sources */,
 				E1B37A711008DC9000A88D3B /* AnalyzingViewController.m in Sources */,
+				E1B37AAB1008E40E00A88D3B /* VisualizationViewController.m in Sources */,
+				E1B37ABE1008E77800A88D3B /* CocosTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
