@@ -94,6 +94,7 @@
 		E1B37C561009082300A88D3B /* CocosView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B37C551009082300A88D3B /* CocosView.m */; };
 		E1B37CF91009179000A88D3B /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B37CF81009179000A88D3B /* fire.png */; };
 		E1B37D6310091CD300A88D3B /* Spike.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B37D6210091CD300A88D3B /* Spike.m */; };
+		E1B37E121009245D00A88D3B /* BasicEQ.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B37E111009245D00A88D3B /* BasicEQ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -269,6 +270,8 @@
 		E1B37D0F100919BA00A88D3B /* SegmentAwareNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SegmentAwareNode.h; path = "source/musichackday-viz/Classes/SegmentAwareNode.h"; sourceTree = DEVELOPER_DIR; };
 		E1B37D6110091CD300A88D3B /* Spike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Spike.h; path = "source/musichackday-viz/Classes/Spike.h"; sourceTree = DEVELOPER_DIR; };
 		E1B37D6210091CD300A88D3B /* Spike.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Spike.m; path = "source/musichackday-viz/Classes/Spike.m"; sourceTree = DEVELOPER_DIR; };
+		E1B37E101009245D00A88D3B /* BasicEQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicEQ.h; path = "source/musichackday-viz/Classes/BasicEQ.h"; sourceTree = DEVELOPER_DIR; };
+		E1B37E111009245D00A88D3B /* BasicEQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicEQ.m; path = "source/musichackday-viz/Classes/BasicEQ.m"; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -548,8 +551,6 @@
 				E1B37AAA1008E40E00A88D3B /* VisualizationViewController.m */,
 				E1B37B7B1008F14E00A88D3B /* TrackSegmentInfo.h */,
 				E1B37B7C1008F14E00A88D3B /* TrackSegmentInfo.m */,
-				E1B37C541009082300A88D3B /* CocosView.h */,
-				E1B37C551009082300A88D3B /* CocosView.m */,
 			);
 			name = Visualization;
 			sourceTree = "<group>";
@@ -557,6 +558,8 @@
 		E1B37C43100906EC00A88D3B /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				E1B37C541009082300A88D3B /* CocosView.h */,
+				E1B37C551009082300A88D3B /* CocosView.m */,
 				E1B37C44100906FD00A88D3B /* FireBall.h */,
 				E1B37C45100906FD00A88D3B /* FireBall.m */,
 				E1B37C471009070F00A88D3B /* BaseVisualizationItem.h */,
@@ -564,6 +567,8 @@
 				E1B37D0F100919BA00A88D3B /* SegmentAwareNode.h */,
 				E1B37D6110091CD300A88D3B /* Spike.h */,
 				E1B37D6210091CD300A88D3B /* Spike.m */,
+				E1B37E101009245D00A88D3B /* BasicEQ.h */,
+				E1B37E111009245D00A88D3B /* BasicEQ.m */,
 			);
 			name = Items;
 			sourceTree = "<group>";
@@ -705,6 +710,7 @@
 				D999FA3610090212009C13B9 /* NSString+SBJSON.m in Sources */,
 				D999FA6C10090432009C13B9 /* GTMSystemVersion.m in Sources */,
 				D999FA6D10090432009C13B9 /* GTMHTTPFetcher.m in Sources */,
+				E1B37E121009245D00A88D3B /* BasicEQ.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

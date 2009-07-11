@@ -28,13 +28,13 @@
 }
 
 
-- (id) initWithArray: (NSArray *) segments andFileName: (NSString *) fileName{
+- (id) initWithArray: (NSArray *) segments andFileName: (NSString *) newFileName{
 	self = [super init];
 	if (self != nil) {
 		self.segmentInfo = [segments retain];
 		currentIndex = 0;
 		totalSegments = [segments count];
-		self.fileName = fileName;
+		self.fileName = newFileName;
 	}
 	return self;
 }

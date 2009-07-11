@@ -19,7 +19,7 @@
 @property(retain, nonatomic) NSString *fileName;
 @property(retain, nonatomic) NSArray *segmentInfo;
 
-- (id) initWithArray: (NSArray *) segments andFileName: (NSString *) fileName;
+- (id) initWithArray: (NSArray *) segments andFileName: (NSString *) newFileName;
 
 - (ENSegment *) segmentForMillisecond: (float) millisecond;
 

@@ -11,15 +11,17 @@
 #import "FireBall.h"
 #import "Spike.h"
 #import "SegmentAwareNode.h"
+#import "BasicEQ.h"
 @interface CocosView : CocosNode <SegmentAwareNode> {
 	//TODO - add more visualizations
 	FireBall *fireBall;
+	BasicEQ *eq;
 	Spike *spike;
 }
 
 @property(retain, nonatomic) FireBall *fireBall;
 @property(retain, nonatomic) Spike *spike;
-
+@property(retain, nonatomic) BasicEQ *eq;
 
 - (void) updateSegmentInfo: (ENSegment *) info;
 

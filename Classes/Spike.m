@@ -24,13 +24,14 @@
 		self.emitter = [ParticleSun node];
         emitter.texture = [[TextureMgr sharedTextureMgr] addImage: @"fire.pvr"];
         emitter.life = 1;
-		[self addChild:self.emitter];
 	}
 	return self;
 }
 
 - (void) updateSegmentInfo:(ENSegment *)info{
-	emitter.endSize = emitter.endSize == 1 ? -info.maxLoudness.loudness : 1;
+	//[self addChild:[self.emitter init]];
+	[self.emitter init];
+	//emitter.endSize = emitter.endSize == 1 ? -info.maxLoudness.loudness : 1;
 	//	emitter.life = -info.globalLoudness.loudness;
 	
 }

@@ -11,8 +11,6 @@
 #import "GTMHTTPFetcher.h"
 #import "NSString+SBJSON.h"
 @interface RootViewController(Private)
--(void) navigateToAnalyzeTrack;
--(void) navigateToVisualizeTrack;
 -(void) startVisualization: (NSNotification *)notification;
 -(void) visualizeTrack;
 -(void) analyzeTrack:(NSString *)url;
@@ -132,11 +130,6 @@ static NSArray *trackNames = nil;
 {
 	[self analyzeTrack:[trackUrls objectAtIndex:indexPath.row]];
 }
-
--(void) navigateToAnalyzeTrack{
-	[self navigateToAnalyzeTrack];
-}
-
 -(void) analyzeTrack:(NSString *)url {
 	if (!self.analyzingViewController)
 	{

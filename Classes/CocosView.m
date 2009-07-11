@@ -7,12 +7,14 @@
 //
 
 #import "CocosView.h"
+#import "BasicEQ.h"
+
 @interface CocosView(Private)
 -(void) addVisualItems;
 @end
 
 @implementation CocosView
-@synthesize fireBall,spike;
+@synthesize fireBall,spike, eq;
 
 - (void) dealloc {
 	[fireBall release];
@@ -36,6 +38,10 @@
 	self.spike = [[Spike alloc]init];
 	self.spike.position = ccp(0,0);
 	[self addChild: self.spike];
+	
+	self.eq = [[BasicEQ alloc] init] ;
+	self.eq.position = ccp(50,50);
+	[self addChild: self.eq];
 }
 
 - (void) updateSegmentInfo: (ENSegment *) info{
