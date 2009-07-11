@@ -153,7 +153,9 @@ static NSArray *trackNames = nil;
         self.visualizationViewController = [[VisualizationViewController alloc] 
 										initWithNibName:@"VisualizationViewController" bundle:nil];
     }
-	self.visualizationViewController.trackInfo = [notification object];
+    NSDictionary *info = [notification object];
+	self.visualizationViewController.trackInfo = [info objectForKey:@"segments"];
+    self.visualizationViewController.mp3Filename = [info objectForKey:@"filename"];
     [self.navigationController pushViewController:visualizationViewController animated:YES];
 }
 
