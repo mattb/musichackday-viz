@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "ENTrack.h"
 #import "FireBall.h"
-#import "SegmentAwareNode.h"
 #import "Spike.h"
+#import "SegmentAwareNode.h"
 @interface CocosView : CocosNode <SegmentAwareNode> {
 	//TODO - add more visualizations
 	FireBall *fireBall;

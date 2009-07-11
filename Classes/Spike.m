@@ -21,7 +21,7 @@
 - (id) init {
 	self = [super init];
 	if (self != nil) {
-		self.emitter = [ParticleExplosion node];
+		self.emitter = [ParticleSun node];
         emitter.texture = [[TextureMgr sharedTextureMgr] addImage: @"fire.pvr"];
         emitter.life = 1;
 		[self addChild:self.emitter];
@@ -30,7 +30,7 @@
 }
 
 - (void) updateSegmentInfo:(ENSegment *)info{
-	emitter.endSize = -info.maxLoudness.loudness;
+	emitter.endSize = emitter.endSize == 1 ? -info.maxLoudness.loudness : 1;
 	//	emitter.life = -info.globalLoudness.loudness;
 	
 }

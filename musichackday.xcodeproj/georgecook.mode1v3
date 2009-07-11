@@ -333,7 +333,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E1B37DA910091F4000A88D3B</string>
+										<string>E1B37DFE100921B300A88D3B</string>
 										<key>history</key>
 										<array>
 											<string>E1B37AD31008E9B800A88D3B</string>
@@ -341,20 +341,15 @@
 											<string>E1B37BC91008FBB500A88D3B</string>
 											<string>E1B37BE31008FD7700A88D3B</string>
 											<string>E1B37CD2100916E700A88D3B</string>
-											<string>E1B37CD3100916E700A88D3B</string>
 											<string>E1B37D061009182500A88D3B</string>
 											<string>E1B37D10100919C400A88D3B</string>
 											<string>E1B37D4610091C4E00A88D3B</string>
-											<string>E1B37D9F10091F4000A88D3B</string>
-											<string>E1B37DA010091F4000A88D3B</string>
-											<string>E1B37DA110091F4000A88D3B</string>
-											<string>E1B37DA210091F4000A88D3B</string>
-											<string>E1B37DA310091F4000A88D3B</string>
-											<string>E1B37DA410091F4000A88D3B</string>
-											<string>E1B37DA510091F4000A88D3B</string>
-											<string>E1B37DA610091F4000A88D3B</string>
-											<string>E1B37DA710091F4000A88D3B</string>
-											<string>E1B37DA810091F4000A88D3B</string>
+											<string>E1B37DD8100920A800A88D3B</string>
+											<string>E1B37DD9100920A800A88D3B</string>
+											<string>E1B37DDC100920A800A88D3B</string>
+											<string>E1B37DF11009212200A88D3B</string>
+											<string>E1B37DF81009217500A88D3B</string>
+											<string>E1B37DF91009217500A88D3B</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -412,9 +407,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>E1B37D4A10091C4E00A88D3B</string>
+				<string>E1B37DDF100920A800A88D3B</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>E1B37D4B10091C4E00A88D3B</string>
+				<string>E1B37DE0100920A800A88D3B</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -552,8 +547,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>E1B37D5510091C4E00A88D3B</string>
-		<string>E1B37D5610091C4E00A88D3B</string>
+		<string>E1B37DF0100920DC00A88D3B</string>
+		<string>E1B37DE8100920A800A88D3B</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>E1BCF2131008CF780096DA91</string>
 		<string>1C78EAAD065D492600B07095</string>
@@ -639,7 +634,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>E1BCF2131008CF780096DA91</string>
-				<string>E1B37D4C10091C4E00A88D3B</string>
+				<string>E1B37DBA10091F9A00A88D3B</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -683,8 +678,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 202}}</string>
-											<string>{{316, 0}, {378, 202}}</string>
+											<string>{{0, 0}, {316, 203}}</string>
+											<string>{{316, 0}, {378, 203}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -699,8 +694,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 202}}</string>
-											<string>{{0, 202}, {694, 179}}</string>
+											<string>{{0, 0}, {694, 203}}</string>
+											<string>{{0, 203}, {694, 178}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -733,7 +728,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 202}}</string>
+									<string>{{316, 0}, {378, 203}}</string>
 									<key>RubberWindowFrame</key>
 									<string>393 295 694 422 0 0 1440 878 </string>
 								</dict>
@@ -761,13 +756,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>E1B37D4D10091C4E00A88D3B</string>
+				<string>E1B37DE1100920A800A88D3B</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>E1B37D4E10091C4E00A88D3B</string>
-				<string>E1B37D4F10091C4E00A88D3B</string>
-				<string>E1B37D5010091C4E00A88D3B</string>
-				<string>E1B37D5110091C4E00A88D3B</string>
-				<string>E1B37D5210091C4E00A88D3B</string>
+				<string>E1B37DE2100920A800A88D3B</string>
+				<string>E1B37DE3100920A800A88D3B</string>
+				<string>E1B37DE4100920A800A88D3B</string>
+				<string>E1B37DE5100920A800A88D3B</string>
+				<string>E1B37DE6100920A800A88D3B</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -923,7 +918,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>E1B37D5310091C4E00A88D3B</string>
+				<string>E1B37DBB10091F9A00A88D3B</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
