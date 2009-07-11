@@ -276,9 +276,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>11</integer>
-									<integer>4</integer>
-									<integer>3</integer>
+									<integer>21</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -321,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Spike.m</string>
+								<string>RootViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,27 +327,25 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Spike.m</string>
+										<string>RootViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E1B37DFE100921B300A88D3B</string>
+										<string>E1B37E0D1009234500A88D3B</string>
 										<key>history</key>
 										<array>
 											<string>E1B37AD31008E9B800A88D3B</string>
 											<string>E1B37AD51008E9B800A88D3B</string>
 											<string>E1B37BC91008FBB500A88D3B</string>
 											<string>E1B37BE31008FD7700A88D3B</string>
-											<string>E1B37CD2100916E700A88D3B</string>
 											<string>E1B37D061009182500A88D3B</string>
-											<string>E1B37D10100919C400A88D3B</string>
 											<string>E1B37D4610091C4E00A88D3B</string>
 											<string>E1B37DD8100920A800A88D3B</string>
-											<string>E1B37DD9100920A800A88D3B</string>
 											<string>E1B37DDC100920A800A88D3B</string>
 											<string>E1B37DF11009212200A88D3B</string>
 											<string>E1B37DF81009217500A88D3B</string>
-											<string>E1B37DF91009217500A88D3B</string>
+											<string>E1B37E0B1009234500A88D3B</string>
+											<string>E1B37E0C1009234500A88D3B</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -547,12 +543,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>E1B37E0E1009234500A88D3B</string>
 		<string>E1B37DF0100920DC00A88D3B</string>
 		<string>E1B37DE8100920A800A88D3B</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>E1BCF2131008CF780096DA91</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Developer/source/musichackday-viz/musichackday.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>22 59 1238 819 0 0 1440 878 </string>

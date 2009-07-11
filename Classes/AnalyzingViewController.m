@@ -102,7 +102,8 @@
         self._segments = [not object];
         _segment_idx = 0;
 
-        NSDictionary *info = [NSDictionary dictionaryWithObjectsAndKeys:self.filename, @"filename", [[TrackSegmentInfo alloc] initWithArray:self._segments], @"segments", nil];
+        NSDictionary *info = [[TrackSegmentInfo alloc] initWithArray:self._segments andFileName:self.filename];
+		
 		[[NSNotificationCenter defaultCenter]
 				postNotificationName:@"startVisualization" object:info];
     }

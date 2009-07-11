@@ -13,9 +13,13 @@
 	NSArray *segmentInfo;
 	float currentIndex;
 	float totalSegments;
+	NSString *fileName;
 }
 
-- (id) initWithArray: (NSArray *) segments;
+@property(retain, nonatomic) NSString *fileName;
+@property(retain, nonatomic) NSArray *segmentInfo;
+
+- (id) initWithArray: (NSArray *) segments andFileName: (NSString *) fileName;
 
 - (ENSegment *) segmentForMillisecond: (float) millisecond;
 

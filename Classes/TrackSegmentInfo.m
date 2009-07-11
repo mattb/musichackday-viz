@@ -15,23 +15,26 @@
 
 
 @implementation TrackSegmentInfo
+@synthesize fileName, segmentInfo;
 
 - (ENSegment *) getSementForMillisecond: (float) millisecond{
 	return nil;
 }
 
 - (void) dealloc {
+	[fileName release];
 	[segmentInfo release];
 	[super dealloc];
 }
 
 
-- (id) initWithArray: (NSArray *) segments{
+- (id) initWithArray: (NSArray *) segments andFileName: (NSString *) fileName{
 	self = [super init];
 	if (self != nil) {
-		segmentInfo = [segments retain];
+		self.segmentInfo = [segments retain];
 		currentIndex = 0;
 		totalSegments = [segments count];
+		self.fileName = fileName;
 	}
 	return self;
 }
