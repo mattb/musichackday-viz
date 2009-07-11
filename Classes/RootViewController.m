@@ -8,15 +8,22 @@
 
 #import "RootViewController.h"
 #import "TrackSegmentInfo.h"
+#import "GTMHTTPFetcher.h"
+#import "NSString+SBJSON.h"
 @interface RootViewController(Private)
 -(void) navigateToAnalyzeTrack;
 -(void) navigateToVisualizeTrack;
 -(void) startVisualization: (NSNotification *)notification;
+
+@interface RootViewController(Private)
+-(void) visualizeTrack;
+-(void) analyzeTrack:(NSString *)url;
+
 @end
 
 
 @implementation RootViewController
-@synthesize trackList, analyzingViewController, visualizationViewController;
+@synthesize trackUrls, trackList, analyzingViewController, visualizationViewController;
 static NSArray *trackNames = nil;
 
 - (void)dealloc{
@@ -32,19 +39,50 @@ static NSArray *trackNames = nil;
 	self.title = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"];
 	
 	self.trackList = [NSMutableArray array];
+    self.trackUrls = [NSMutableArray array];
     if (!trackNames)
 	{
-		trackNames = [[NSArray alloc] initWithObjects:@"track one", @"track two", @"track three", nil];
+		trackNames = [[NSArray alloc] initWithObjects:@"loading...", nil];
     }
-	
+
     for (NSString *trackName in trackNames)
 	{
 		[self.trackList addObject:trackName];
 	}
-	[self.tableView reloadData];
+	[self.tableView reloadData];	
+
 	[[NSNotificationCenter defaultCenter] addObserver:self
 											 selector:@selector(startVisualization:)
 												 name:@"startVisualization" object:nil];
+
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.sandbox-soundcloud.com/users/forss/tracks.json"]];
+    GTMHTTPFetcher* myFetcher = [GTMHTTPFetcher httpFetcherWithRequest:request];
+    [myFetcher setCredential:[NSURLCredential credentialWithUser:@"mattb" password:@"biddulph" persistence:NSURLCredentialPersistenceNone]];
+    [myFetcher beginFetchWithDelegate:self
+					didFinishSelector:@selector(myFetcher:finishedWithData:)
+                      didFailSelector:@selector(myFetcher:failedWithError:)];
+    
+}
+
+- (void)myFetcher:(GTMHTTPFetcher *)fetcher finishedWithData:(NSData *)data {
+    NSString *json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSArray *tracks = [json JSONValue];
+    [self.trackList removeAllObjects];
+    [self.trackUrls removeAllObjects];
+    for(NSDictionary *track in tracks) {
+        NSString *title = [track objectForKey:@"title"];
+        if([track objectForKey:@"downloadable"]) {
+            [self.trackList addObject:title];
+            [self.trackUrls addObject:[track objectForKey:@"download_url"]];
+        } else {
+            NSLog(@"%@ is not downloadable.");
+        }
+	}
+	[self.tableView reloadData];
+}
+
+- (void)myFetcher:(GTMHTTPFetcher *)fetcher failedWithError:(NSError *)error {
+	NSLog(@"ERROR: %@", error);
 }
 
 - (void)viewDidUnload
@@ -98,13 +136,17 @@ static NSArray *trackNames = nil;
 }
 
 -(void) navigateToAnalyzeTrack{
+	[self analyzeTrack:[trackUrls objectAtIndex:indexPath.row]];
+}
+
+-(void) analyzeTrack:(NSString *)url {
 	if (!self.analyzingViewController)
 	{
         self.analyzingViewController = [[AnalyzingViewController alloc] 
 										initWithNibName:@"AnalyzingViewController" bundle:nil];
     }
+    self.analyzingViewController.url = url;
     [self.navigationController pushViewController:analyzingViewController animated:YES];
-	
 }
 
 -(void) startVisualization: (NSNotification *)notification{
