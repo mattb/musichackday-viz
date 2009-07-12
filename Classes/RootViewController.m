@@ -51,7 +51,7 @@ static NSArray *trackNames = nil;
 											 selector:@selector(startVisualization:)
 												 name:@"startVisualization" object:nil];
 
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.soundcloud.com/users/thesmith/tracks.json"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.soundcloud.com/users/forss/tracks.json"]];
     GTMHTTPFetcher* myFetcher = [GTMHTTPFetcher httpFetcherWithRequest:request];
     [myFetcher setCredential:[NSURLCredential credentialWithUser:@"mattb" password:@"biddulph" persistence:NSURLCredentialPersistenceNone]];
     [myFetcher beginFetchWithDelegate:self

@@ -90,7 +90,7 @@
 
 -(void)ENTrackTempoLoaded:(NSNotification*)not {
 	if ([[[not userInfo] valueForKey:@"success"] boolValue]) {
-		status.text = [NSString stringWithFormat:@"Tempo analysed: %f BPM",[[not object] tempo]];
+		status.text = [NSString stringWithFormat:@"Tempo: %f BPM. Downloading segments...",[[not object] tempo]];
 	} else {
         status.text = @"Tempo analysis failed.";
     }

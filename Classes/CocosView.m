@@ -14,7 +14,7 @@
 @end
 
 @implementation CocosView
-@synthesize fireBall,spike, eq1, eq2, eq3, eq4, walker;
+@synthesize fireBall, fireBall2, spike, eq1, eq2, eq3, eq4, walker;
 
 - (void) dealloc {
 	[fireBall release];
@@ -32,8 +32,13 @@
 //Todo, could change the track contents on the analysis here..
 -(void) addVisualItems{
 	self.fireBall = [[FireBall alloc]init];
-	self.fireBall.position = ccp(100,100);
+	self.fireBall.emitter.position = ccp(70,350);
 	[self addChild: self.fireBall];
+    
+    self.fireBall2 = [[FireBall alloc]init];
+	self.fireBall2.emitter.position = ccp(270,350);
+	[self addChild: self.fireBall2];
+    
 	//self.spike = [[Spike alloc]init];
 	//self.spike.position = ccp(0,0);
 	//[self addChild: self.spike];

@@ -16,13 +16,13 @@
 
 @interface CocosView : CocosNode <SegmentAwareNode> {
 	//TODO - add more visualizations
-	FireBall *fireBall;
+	FireBall *fireBall, *fireBall2;
 	BasicEQ *eq1, *eq2, *eq3, *eq4;
 	Spike *spike;
     Walker *walker;
 }
 
-@property(retain, nonatomic) FireBall *fireBall;
+@property(retain, nonatomic) FireBall *fireBall, *fireBall2;
 @property(retain, nonatomic) Spike *spike;
 @property(retain, nonatomic) BasicEQ *eq1, *eq2, *eq3, *eq4;
 @property(retain, nonatomic) Walker *walker;
