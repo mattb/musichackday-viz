@@ -331,7 +331,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E1E9F4BC1009EA5E0002E64F</string>
+										<string>E1E9F4C61009EAC40002E64F</string>
 										<key>history</key>
 										<array>
 											<string>E1B37AD31008E9B800A88D3B</string>
@@ -546,8 +546,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>E1E9F4CE1009EAC40002E64F</string>
+		<string>E1E9F4CF1009EAC40002E64F</string>
+		<string>E1E9F4D01009EAC40002E64F</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>E1BCF2131008CF780096DA91</string>
 		<string>/Developer/source/musichackday-viz/musichackday.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>22 59 1238 819 0 0 1440 878 </string>
@@ -749,13 +754,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>E1B37DE1100920A800A88D3B</string>
+				<string>E1E9F4C71009EAC40002E64F</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>E1B37DE2100920A800A88D3B</string>
-				<string>E1B37DE3100920A800A88D3B</string>
-				<string>E1B37DE4100920A800A88D3B</string>
-				<string>E1B37DE5100920A800A88D3B</string>
-				<string>E1B37DE6100920A800A88D3B</string>
+				<string>E1E9F4C81009EAC40002E64F</string>
+				<string>E1E9F4C91009EAC40002E64F</string>
+				<string>E1E9F4CA1009EAC40002E64F</string>
+				<string>E1E9F4CB1009EAC40002E64F</string>
+				<string>E1E9F4CC1009EAC40002E64F</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -911,7 +916,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>E1B37DBB10091F9A00A88D3B</string>
+				<string>E1E9F4CD1009EAC40002E64F</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

@@ -29,9 +29,9 @@
 	};
 	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {999, 2132}}";
-			sepNavSelRange = "{4415, 0}";
-			sepNavVisRange = "{152, 1908}";
+			sepNavIntBoundsRect = "{{0, 0}, {999, 2015}}";
+			sepNavSelRange = "{4183, 0}";
+			sepNavVisRange = "{2981, 2153}";
 			sepNavWindowFrame = "{{38, 103}, {1309, 749}}";
 		};
 	};
@@ -141,6 +141,7 @@
 			E1B37E9810094D9500A88D3B = E1B37E9810094D9500A88D3B /* PBXTextBookmark */;
 			E1B37EAB100952CB00A88D3B = E1B37EAB100952CB00A88D3B /* PBXTextBookmark */;
 			E1E9F4BC1009EA5E0002E64F /* PBXTextBookmark */ = E1E9F4BC1009EA5E0002E64F /* PBXTextBookmark */;
+			E1E9F4C61009EAC40002E64F /* PBXTextBookmark */ = E1E9F4C61009EAC40002E64F /* PBXTextBookmark */;
 		};
 		sourceControlManager = E1BCF1931008CDDB0096DA91 /* Source Control */;
 		userBuildSettings = {
@@ -357,7 +358,7 @@
 		ignoreCount = 0;
 		lineNumber = 44;
 		location = musichackday;
-		modificationTime = 269045507.777011;
+		modificationTime = 269085340.145862;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -375,7 +376,7 @@
 		ignoreCount = 0;
 		lineNumber = 167;
 		location = musichackday;
-		modificationTime = 269045507.777131;
+		modificationTime = 269085340.14591;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -404,7 +405,7 @@
 		ignoreCount = 0;
 		lineNumber = 33;
 		location = musichackday;
-		modificationTime = 269045507.777203;
+		modificationTime = 269085340.145922;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -551,7 +552,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
 		name = "RootViewController.m: 131";
 		rLen = 0;
-		rLoc = 4477;
+		rLoc = 4183;
 		rType = 0;
 		vrLen = 2153;
 		vrLoc = 2981;
@@ -561,7 +562,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
 		name = "RootViewController.m: 136";
 		rLen = 0;
-		rLoc = 4415;
+		rLoc = 4183;
 		rType = 0;
 		vrLen = 1911;
 		vrLoc = 149;
@@ -617,9 +618,19 @@
 		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
 		name = "RootViewController.m: 136";
 		rLen = 0;
-		rLoc = 4415;
+		rLoc = 4183;
 		rType = 0;
 		vrLen = 1908;
 		vrLoc = 152;
+	};
+	E1E9F4C61009EAC40002E64F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 131";
+		rLen = 0;
+		rLoc = 4183;
+		rType = 0;
+		vrLen = 2153;
+		vrLoc = 2981;
 	};
 }

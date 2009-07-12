@@ -128,14 +128,7 @@ static NSArray *trackNames = nil;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	if (!self.visualizationViewController)
-	{
-        self.visualizationViewController = [[VisualizationViewController alloc] 
-											initWithNibName:@"VisualizationViewController" bundle:nil];
-    }
-	[self.navigationController pushViewController:visualizationViewController animated:YES];
-
-//	[self analyzeTrack:[trackUrls objectAtIndex:indexPath.row]];
+	[self analyzeTrack:[trackUrls objectAtIndex:indexPath.row]];
 }
 -(void) analyzeTrack:(NSString *)url {
 	if (!self.analyzingViewController)
