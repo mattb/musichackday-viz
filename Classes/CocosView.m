@@ -25,7 +25,6 @@
 	self = [super init];
 	if (self != nil) {
 		[self addVisualItems];
-		
 	}
 	return self;
 }
