@@ -146,7 +146,7 @@ enum {
 - (void) viewDidLoad{
 	[Director useFastDirector];
 	
-	[[Director sharedDirector] setDisplayFPS:YES];
+	[[Director sharedDirector] setDisplayFPS:NO];
 	[[Director sharedDirector] setAnimationInterval:1/240.0f];
 
 	state = kStateEnd;

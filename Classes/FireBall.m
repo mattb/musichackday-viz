@@ -31,6 +31,7 @@
 
 - (void) updateSegmentInfo:(ENSegment *)info{
 	emitter.endSize = -info.maxLoudness.loudness;
+    emitter.scale = (50 + info.globalLoudness.loudness) / 15;
 //	emitter.life = -info.globalLoudness.loudness;
 
 }

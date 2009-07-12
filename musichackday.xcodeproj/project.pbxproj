@@ -15,6 +15,8 @@
 		2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* RootViewController.xib */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		D92532291009F76A00513951 /* Walker.m in Sources */ = {isa = PBXBuildFile; fileRef = D92532281009F76A00513951 /* Walker.m */; };
+		D92532DC1009F9E800513951 /* small-fry.png in Resources */ = {isa = PBXBuildFile; fileRef = D92532DB1009F9E800513951 /* small-fry.png */; };
 		D96355091008E3C3002A8976 /* EchoNest.m in Sources */ = {isa = PBXBuildFile; fileRef = D96355041008E3C3002A8976 /* EchoNest.m */; };
 		D963550A1008E3C3002A8976 /* ENArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = D96355061008E3C3002A8976 /* ENArtist.m */; };
 		D963550B1008E3C3002A8976 /* ENTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = D96355081008E3C3002A8976 /* ENTrack.m */; };
@@ -111,6 +113,9 @@
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* musichackday-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "musichackday-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		D92532271009F76A00513951 /* Walker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Walker.h; sourceTree = "<group>"; };
+		D92532281009F76A00513951 /* Walker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Walker.m; sourceTree = "<group>"; };
+		D92532DB1009F9E800513951 /* small-fry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-fry.png"; sourceTree = "<group>"; };
 		D96355021008E3C3002A8976 /* CommonDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDigest.h; sourceTree = "<group>"; };
 		D96355031008E3C3002A8976 /* EchoNest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchoNest.h; sourceTree = "<group>"; };
 		D96355041008E3C3002A8976 /* EchoNest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EchoNest.m; sourceTree = "<group>"; };
@@ -353,6 +358,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D92532DB1009F9E800513951 /* small-fry.png */,
 				E1B37CF81009179000A88D3B /* fire.png */,
 				E1B37C41100906E500A88D3B /* fire.pvr */,
 				E1B37AB31008E63800A88D3B /* VisualizationViewController.xib */,
@@ -569,6 +575,8 @@
 				E1B37D6210091CD300A88D3B /* Spike.m */,
 				E1B37E101009245D00A88D3B /* BasicEQ.h */,
 				E1B37E111009245D00A88D3B /* BasicEQ.m */,
+				D92532271009F76A00513951 /* Walker.h */,
+				D92532281009F76A00513951 /* Walker.m */,
 			);
 			name = Items;
 			sourceTree = "<group>";
@@ -634,6 +642,7 @@
 				D963551A1008E7DF002A8976 /* narrier.mp3 in Resources */,
 				E1B37C42100906E500A88D3B /* fire.pvr in Resources */,
 				E1B37CF91009179000A88D3B /* fire.png in Resources */,
+				D92532DC1009F9E800513951 /* small-fry.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +720,7 @@
 				D999FA6C10090432009C13B9 /* GTMSystemVersion.m in Sources */,
 				D999FA6D10090432009C13B9 /* GTMHTTPFetcher.m in Sources */,
 				E1B37E121009245D00A88D3B /* BasicEQ.m in Sources */,
+				D92532291009F76A00513951 /* Walker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

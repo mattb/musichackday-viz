@@ -14,7 +14,7 @@
 @end
 
 @implementation CocosView
-@synthesize fireBall,spike, eq;
+@synthesize fireBall,spike, eq1, eq2, eq3, eq4, walker;
 
 - (void) dealloc {
 	[fireBall release];
@@ -34,20 +34,46 @@
 	self.fireBall = [[FireBall alloc]init];
 	self.fireBall.position = ccp(100,100);
 	[self addChild: self.fireBall];
-	self.spike = [[Spike alloc]init];
-	self.spike.position = ccp(0,0);
-	[self addChild: self.spike];
+	//self.spike = [[Spike alloc]init];
+	//self.spike.position = ccp(0,0);
+	//[self addChild: self.spike];
 	
-	self.eq = [[BasicEQ alloc] init] ;
-	self.eq.position = ccp(50,50);
-	[self addChild: self.eq];
+	self.eq1 = [[BasicEQ alloc] init] ;
+	self.eq1.position = ccp(50,50);
+	[self addChild: self.eq1];
+    self.eq2 = [[BasicEQ alloc] init] ;
+	self.eq2.position = ccp(50,250);
+	[self addChild: self.eq2];
+
+    self.eq3 = [[BasicEQ alloc] init] ;
+	self.eq3.position = ccp(250,50);
+	[self addChild: self.eq3];
+
+    self.eq3 = [[BasicEQ alloc] init] ;
+	self.eq3.position = ccp(250,250);
+	[self addChild: self.eq3];    
+    
+    self.walker = [Walker node];
+    self.walker.position = ccp(0,100);
+	[self addChild: self.walker.manager];
+    
+    [self schedule: @selector(tick:) interval:1.0/60];
+}
+
+-(void) tick: (ccTime) dt
+{
+    int newX = self.walker.position.x + (dt * 100);
+    self.walker.position = ccp(newX % 350, self.walker.position.y);
 }
 
 - (void) updateSegmentInfo: (ENSegment *) info{
 	//update fireball intensity, etc with segment info
 	for( <SegmentAwareNode> node in children){
-		[node updateSegmentInfo:info];
+        if(node != self.walker.manager) {
+            [node updateSegmentInfo:info];
+        }
 	}
+    [self.walker updateSegmentInfo:info];
 }
 
 @end

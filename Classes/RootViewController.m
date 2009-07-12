@@ -51,7 +51,7 @@ static NSArray *trackNames = nil;
 											 selector:@selector(startVisualization:)
 												 name:@"startVisualization" object:nil];
 
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.sandbox-soundcloud.com/users/forss/tracks.json"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.soundcloud.com/users/thesmith/tracks.json"]];
     GTMHTTPFetcher* myFetcher = [GTMHTTPFetcher httpFetcherWithRequest:request];
     [myFetcher setCredential:[NSURLCredential credentialWithUser:@"mattb" password:@"biddulph" persistence:NSURLCredentialPersistenceNone]];
     [myFetcher beginFetchWithDelegate:self
@@ -67,7 +67,7 @@ static NSArray *trackNames = nil;
     [self.trackUrls removeAllObjects];
     for(NSDictionary *track in tracks) {
         NSString *title = [track objectForKey:@"title"];
-        if([track objectForKey:@"downloadable"]) {
+        if([track objectForKey:@"download_url"] != nil) {
             [self.trackList addObject:title];
             [self.trackUrls addObject:[track objectForKey:@"download_url"]];
         } else {
